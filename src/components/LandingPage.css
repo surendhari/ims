@@ -339,14 +339,7 @@ body{
     background:#1d63d6;
     color:#fff;
     border:none;
-    box-shadow:0 12px 30px rgba(29,99,214,.25);
 }
-
-.category-buttons button:hover{
-    transform:translateY(-3px);
-}
-
-
 
 .student-image-box{
     width:50%;
