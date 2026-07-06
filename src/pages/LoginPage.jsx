@@ -17,7 +17,6 @@ export default function LoginPage() {
   const validate = () => {
     let newErrors = {};
 
-    // Email Validation
     if (!email.trim()) {
       newErrors.email = "Email is required";
     } else if (
@@ -26,7 +25,6 @@ export default function LoginPage() {
       newErrors.email = "Enter a valid email address";
     }
 
-    // Password Validation
     if (!password.trim()) {
       newErrors.password = "Password is required";
     } else if (password.length < 6) {
@@ -48,8 +46,6 @@ export default function LoginPage() {
         email,
         password,
       });
-
-      // API Call Here
     }
   };
 
@@ -116,7 +112,7 @@ export default function LoginPage() {
           <div className="password-row">
             <label>Password</label>
 
-            <a href="/">Forgot Password?</a>
+            <a href="/twostepverification">Forgot Password?</a>
           </div>
 
           <div className="input-box">
