@@ -5,6 +5,7 @@ import TwoStepverification from "./pages/TwoStepverification";
 import Verificationcode from "./pages/Verificationcode";
 import ForgotPassword from "./pages/ForgotPassword";
 import ForgotPasswordOtp from "./pages/FrogotPasswordOtp";
+import ResetPassword from "./pages/ResetPassword";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="verificationcode" element={< Verificationcode/>}/>
         <Route path="ForgotPassword" element={<ForgotPassword/>}/>
         <Route path="ForgotPasswordOtp" element={<ForgotPasswordOtp/>}/>
+        <Route path="ResetPassword" element={<ResetPassword/>}/>
       </Routes>
     </BrowserRouter>
   );

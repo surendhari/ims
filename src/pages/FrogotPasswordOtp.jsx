@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ForgotPasswordOtp.css"
 import protect from "../assets/loginpage/protect.png"
 import arrow from "../assets/loginpage/arrow.png"
@@ -7,6 +8,7 @@ import protectcode from "../assets/loginpage/protectcode.png"
 
 
 export default function ForgotPasswordOtp() {
+const navigate = useNavigate();
    
 const inputs = useRef([]);
 const [otp, setOtp] = useState(["", "", "", "", "", ""]);
@@ -40,6 +42,7 @@ const handleVerify = () => {
   }
 
   alert("OTP Verified");
+   navigate("/resetpassword");
 };
 
 
