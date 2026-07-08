@@ -49,7 +49,7 @@ export default function TwoStepverification() {
                 </div>
             </div>
 
-             <p className="copyright">© 2024 InternMS</p>
+             <p className="copyright">&copy; 2024 InternMS</p>
         </div>
 
 

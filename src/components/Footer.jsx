@@ -57,7 +57,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
 
-        <p>© 2024 InternMS. All rights reserved.</p>
+        <p>&copy; 2024 InternMS. All rights reserved.</p>
 
         <p>
           Made with <span className="heart">❤</span> for the future workforce

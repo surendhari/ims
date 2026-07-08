@@ -81,7 +81,7 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <p className="copyright">© 2024 InternMS</p>
+        <p className="copyright">&copy; 2024 InternMS</p>
       </div>
 
       <div className="rightside-container">

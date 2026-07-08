@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation , useNavigate} from "react-router-dom";
 import "./Verificationcode.css"
 import protect2 from "../assets/loginpage/protect2.png";
 import arrow from "../assets/loginpage/arrow.png";
@@ -14,6 +14,7 @@ export default function Verification() {
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
 
   const inputs = useRef([]);
+  const navigate = useNavigate();
 
   const handleChange = (e, index) => {
     const value = e.target.value;
@@ -96,7 +97,7 @@ export default function Verification() {
 
         </div>
 
-        <button className="verify-btn">
+        <button className="verify-btn"  onClick={() => navigate("/forgotpassword")}>
 
           Verify Identity
 
