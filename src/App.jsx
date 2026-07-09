@@ -6,6 +6,7 @@ import Verificationcode from "./pages/Verificationcode";
 import ForgotPassword from "./pages/ForgotPassword";
 import ForgotPasswordOtp from "./pages/FrogotPasswordOtp";
 import ResetPassword from "./pages/ResetPassword";
+import ResetPasswordSuccess from "./pages/ResetPasswordSuccess";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="ForgotPassword" element={<ForgotPassword/>}/>
         <Route path="ForgotPasswordOtp" element={<ForgotPasswordOtp/>}/>
         <Route path="ResetPassword" element={<ResetPassword/>}/>
+        <Route path="ResetPasswordSuccess" element={<ResetPasswordSuccess/>}/>
       </Routes>
     </BrowserRouter>
   );

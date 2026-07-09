@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import mail from"../assets/mail.png";
 import global from "../assets/global.png";
+import heart from "../assets/heart.png"
 
 export default function Footer() {
   return (
@@ -60,7 +61,7 @@ export default function Footer() {
         <p>&copy; 2024 InternMS. All rights reserved.</p>
 
         <p>
-          Made with <span className="heart">❤</span> for the future workforce
+          Made with <img src={heart} alt="heart" /> for the future workforce
         </p>
 
       </div>

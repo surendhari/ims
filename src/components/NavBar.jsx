@@ -9,7 +9,7 @@ export default function NavBar() {
         <h2>InternMS</h2>
       </div>
       <div className="nav-buttons">
-        <Link to="/login" className="login-btn">
+        <Link to="/login" className="Nav-login-btn">
     Login
   </Link>
         <button className="register-btn">Register</button>
