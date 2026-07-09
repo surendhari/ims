@@ -42,7 +42,7 @@ export default function Verification() {
 
       <div className="verify-left">
 
-        <div className="left-content">
+        <div className="verify-left-content">
 
           <div className="icon-box">
             <img src={protect2} alt="protect2" />

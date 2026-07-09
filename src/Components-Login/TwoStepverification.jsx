@@ -33,8 +33,8 @@ export default function TwoStepverification() {
   return (
     <div className='twostep-main'>
 
-        <div className='left-container'>
-            <div className='left-content'>
+        <div className='twostep-left-container'>
+            <div className='twostep-left-content'>
                 <h2>Secure Your Account</h2>
                 <p>Protecting your professional profile and <br />
                    application history is our top priority. Choose a <br />
@@ -54,7 +54,7 @@ export default function TwoStepverification() {
 
 
 
-        <div className='right-container'>
+        <div className='twostep-right-container'>
          <div>
             <h1>Two-Step Verification</h1>
             <p>Choose how you'd like to verify identity.</p>

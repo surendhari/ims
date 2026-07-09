@@ -26,13 +26,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    padding: 100px;
     color: #fff;
     overflow: hidden;
 }
 
 
-.left-content .icon-box{
+.verify-left-content .icon-box{
     width: 60px;
     height: 60px;
     border-radius: 14px;
@@ -40,18 +40,18 @@
     margin-bottom: 30px;
 }
 
-.left-content .icon-box img{
+.verify-left-content .icon-box img{
     width: 40px;
     height: 40px;
 }
 
-.left-content h1{
+.verify-left-content h1{
     font-size: 34px;
     font-weight: 700;
     line-height: 42px;
 }
 
-.left-content p{
+.verify-left-content p{
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 20px;
@@ -59,7 +59,7 @@
 }
 
 .joined{
-    margin-top: 50px;
+    margin-top: 120px;
     font-size: 13px;
     color: rgba(255,255,255,.85);
 }
