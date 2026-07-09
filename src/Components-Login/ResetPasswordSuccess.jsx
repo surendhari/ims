@@ -61,7 +61,7 @@ export default function ResetPasswordSuccess() {
           anyone.
         </p>
 
-        <button className="login-btn">
+        <button className="login-btn" onClick={() => navigate("/")}>
           Back to Login
         </button>
 

@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./components/LandingPage";
-import LoginPage from "./pages/LoginPage";
-import TwoStepverification from "./pages/TwoStepverification";
-import Verificationcode from "./pages/Verificationcode";
-import ForgotPassword from "./pages/ForgotPassword";
-import ForgotPasswordOtp from "./pages/FrogotPasswordOtp";
-import ResetPassword from "./pages/ResetPassword";
-import ResetPasswordSuccess from "./pages/ResetPasswordSuccess";
+import LandingPage from "./Components-LandingPage/LandingPage";
+import LoginPage from "./Components-Login/LoginPage";
+import TwoStepverification from "./Components-Login/TwoStepverification";
+import Verificationcode from "./Components-Login/Verificationcode";
+import ForgotPassword from "./Components-Login/ForgotPassword";
+import ForgotPasswordOtp from "./Components-Login/FrogotPasswordOtp";
+import ResetPassword from "./Components-Login/ResetPassword";
+import ResetPasswordSuccess from "./Components-Login/ResetPasswordSuccess";
+
 
 function App() {
   return (
