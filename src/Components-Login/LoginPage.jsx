@@ -6,7 +6,7 @@ import eye from "../assets/loginpage/eye.png";
 import google from "../assets/loginpage/google.png";
 import arrow from "../assets/loginpage/arrow.png";
 
-export default function LoginPage() {
+export const LoginPage=()=> {
   const [showPassword, setShowPassword] = useState(false);
 
   const [email, setEmail] = useState("");

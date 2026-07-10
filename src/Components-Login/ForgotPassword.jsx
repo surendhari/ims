@@ -6,7 +6,7 @@ import forgot from "../assets/loginpage/forgot.png"
 import arrow from "../assets/loginpage/arrow.png"
 import backarrow from "../assets/loginpage/backarrow.png"
 
-export default function ForgotPassword() {
+export const ForgotPassword=() => {
   const navigate = useNavigate();
   const [method, setMethod] = useState("email");
 

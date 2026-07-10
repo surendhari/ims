@@ -8,7 +8,7 @@ import protectcode from "../assets/loginpage/protectcode.png";
 import arrow from "../assets/loginpage/arrow.png";
 
 
-export default function ResetPassword() {
+export const ResetPassword=()=> {
   const navigate = useNavigate();
   return (
     <div className='resetmain-container'>

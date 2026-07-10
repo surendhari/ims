@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from "./NavBar";
+import {NavBar} from "./NavBar";
 import nextgen from "../assets/nextgen.png";
 import imsdashboard from "../assets/imsdashboard.png"
 import automated from"../assets/automated.png";
@@ -11,13 +11,13 @@ import "./LandingPage.css";
 import tick from "../assets/tick.png";
 import arrow from "../assets/arrow.png"
 import bluearrow from "../assets/bluearrow.png"
-import Footer from './Footer';
+import {Footer} from './Footer';
 
 
-export default function LandingPage() {
+export const LandingPage = () => {
   return (
     <div>
-     <NavBar/>
+     <NavBar /> 
 
     <section className='dashboard'>
     <div className='leftbox'>
@@ -198,7 +198,7 @@ reminders.
 
 </section>
 
-<Footer/>
+  <Footer />
     </div>
   )
 }

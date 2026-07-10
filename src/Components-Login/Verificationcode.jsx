@@ -5,7 +5,8 @@ import protect2 from "../assets/loginpage/protect2.png";
 import arrow from "../assets/loginpage/arrow.png";
 import protectverify from "../assets/loginpage/protectverify.png";
 
-export default function Verification() {
+export const Verificationcode = ()=> {
+  const [error, setError] = useState("");
   const { state } = useLocation();
 
   const type = state?.type || "email";
@@ -16,25 +17,42 @@ export default function Verification() {
   const inputs = useRef([]);
   const navigate = useNavigate();
 
-  const handleChange = (e, index) => {
-    const value = e.target.value;
-
-    if (!/^[0-9]?$/.test(value)) return;
-
-    const newOtp = [...otp];
-    newOtp[index] = value;
-    setOtp(newOtp);
-
-    if (value && index < 5) {
-      inputs.current[index + 1].focus();
-    }
-  };
-
+  
   const handleKeyDown = (e, index) => {
     if (e.key === "Backspace" && !otp[index] && index > 0) {
       inputs.current[index - 1].focus();
     }
   };
+
+
+  const handleVerify = () => {
+  if (otp.some((digit) => digit === "")) {
+    setError("Please enter the 6-digit verification code.");
+    return;
+  }
+
+  setError("");
+  navigate("/forgotpassword");
+};
+
+const handleChange = (e, index) => {
+  const value = e.target.value;
+
+  if (!/^[0-9]?$/.test(value)) return;
+
+  const newOtp = [...otp];
+  newOtp[index] = value;
+  setOtp(newOtp);
+
+
+  if (newOtp.every((digit) => digit !== "")) {
+    setError("");
+  }
+
+  if (value && index < 5) {
+    inputs.current[index + 1].focus();
+  }
+};
 
   return (
     <div className="verify-main">
@@ -96,8 +114,11 @@ export default function Verification() {
           ))}
 
         </div>
-
-        <button className="verify-btn"  onClick={() => navigate("/forgotpassword")}>
+              {error && <p className="otp-error">{error}</p>}
+       <button
+  className="verify-btn"
+  onClick={handleVerify}
+>
 
           Verify Identity
 

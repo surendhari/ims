@@ -4,7 +4,7 @@ import mail from"../assets/mail.png";
 import global from "../assets/global.png";
 import heart from "../assets/heart.png"
 
-export default function Footer() {
+export const Footer =() => {
   return (
     <footer className="footer">
 

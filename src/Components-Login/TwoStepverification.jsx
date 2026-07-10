@@ -8,7 +8,7 @@ import arrow from "../assets/loginpage/arrow.png"
 import backarrow from "../assets/loginpage/backarrow.png"
 
 
-export default function TwoStepverification() {
+export const TwoStepverification=() =>{
     const [selected, setSelected] = useState("email");
     const navigate = useNavigate();
     const handleVerify = () => {

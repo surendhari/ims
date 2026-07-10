@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LandingPage from "./Components-LandingPage/LandingPage";
-import LoginPage from "./Components-Login/LoginPage";
-import TwoStepverification from "./Components-Login/TwoStepverification";
-import Verificationcode from "./Components-Login/Verificationcode";
-import ForgotPassword from "./Components-Login/ForgotPassword";
-import ForgotPasswordOtp from "./Components-Login/FrogotPasswordOtp";
-import ResetPassword from "./Components-Login/ResetPassword";
-import ResetPasswordSuccess from "./Components-Login/ResetPasswordSuccess";
+import {LandingPage} from "./Components-LandingPage/LandingPage";
+import {LoginPage} from "./Components-Login/LoginPage";
+import {TwoStepverification} from "./Components-Login/TwoStepverification";
+import {Verificationcode} from "./Components-Login/Verificationcode";
+import {ForgotPassword} from "./Components-Login/ForgotPassword";
+import {ForgotPasswordOtp} from "./Components-Login/FrogotPasswordOtp";
+import {ResetPassword} from "./Components-Login/ResetPassword";
+import {ResetPasswordSuccess} from "./Components-Login/ResetPasswordSuccess";
 
 import "./App.css";
 

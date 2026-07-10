@@ -7,7 +7,7 @@ import lock2 from "../assets/loginpage/lock2.png"
 import protectcode from "../assets/loginpage/protectcode.png"
 
 
-export default function ForgotPasswordOtp() {
+export const ForgotPasswordOtp=()=> {
 const navigate = useNavigate();
    
 const inputs = useRef([]);

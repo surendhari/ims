@@ -104,6 +104,13 @@
     transition: .3s;
 }
 
+.otp-error{
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
 .otp-container input:focus{
     border: 2px solid #4F46E5;
 }

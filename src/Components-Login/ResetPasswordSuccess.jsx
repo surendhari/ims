@@ -5,7 +5,7 @@ import passwordsuccess from "../assets/loginpage/passwordsuccess.png"
 import successimg from "../assets/loginpage/successimg.png";
 import success from "../assets/loginpage/success.png"
 
-export default function ResetPasswordSuccess() {
+export const ResetPasswordSuccess=() => {
     const navigate = useNavigate();
 
   return (
