@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
-import mail from"../assets/mail.png";
-import global from "../assets/global.png";
-import heart from "../assets/heart.png"
+import mail from"../assets/landingpage/mail.png";
+import global from "../assets/landingpage/global.png";
+import heart from "../assets/landingpage/heart.png"
 
 export const Footer =() => {
   return (

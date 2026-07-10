@@ -1,16 +1,16 @@
 import React from 'react'
 import {NavBar} from "./NavBar";
-import nextgen from "../assets/nextgen.png";
-import imsdashboard from "../assets/imsdashboard.png"
-import automated from"../assets/automated.png";
-import realtime from "../assets/realtime.png";
-import secure from "../assets/secure.png";
-import success from "../assets/success.png";
-import office from "../assets/office.png";
+import nextgen from "../assets/landingpage/nextgen.png";
+import imsdashboard from "../assets/landingpage/imsdashboard.png"
+import automated from"../assets/landingpage/automated.png";
+import realtime from "../assets/landingpage/realtime.png";
+import secure from "../assets/landingpage/secure.png";
+import success from "../assets/landingpage/success.png";
+import office from "../assets/landingpage/office.png";
 import "./LandingPage.css";
-import tick from "../assets/tick.png";
-import arrow from "../assets/arrow.png"
-import bluearrow from "../assets/bluearrow.png"
+import tick from "../assets/landingpage/tick.png";
+import arrow from "../assets/landingpage/arrow.png"
+import bluearrow from "../assets/landingpage/bluearrow.png"
 import {Footer} from './Footer';
 
 

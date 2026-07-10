@@ -6,10 +6,45 @@ import forgot from "../assets/loginpage/forgot.png";
 import lock from "../assets/loginpage/lock2.png";
 import protectcode from "../assets/loginpage/protectcode.png";
 import arrow from "../assets/loginpage/arrow.png";
+import eye from "../assets/loginpage/eye.png";
+import eyeclose from "../assets/loginpage/eyeclose.png";
+
 
 
 export const ResetPassword=()=> {
+const [showPassword, setShowPassword] = useState(false);
+const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+const [newPassword, setNewPassword] = useState("");
+const [confirmPassword, setConfirmPassword] = useState("");
+const [error, setError] = useState("");
   const navigate = useNavigate();
+
+
+  const handleUpdatePassword = () => {
+  const passwordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#!^()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
+
+  if (!newPassword || !confirmPassword) {
+    setError("Please fill in both password fields.");
+    return;
+  }
+
+  if (!passwordRegex.test(newPassword)) {
+    setError(
+      "Password must contain at least 8 characters, 1 uppercase, 1 lowercase, 1 number and 1 special character."
+    );
+    return;
+  }
+
+  if (newPassword !== confirmPassword) {
+    setError("Passwords do not match.");
+    return;
+  }
+
+  setError("");
+  navigate("/ResetPasswordSuccess");
+};
+
   return (
     <div className='resetmain-container'>
 
@@ -46,45 +81,58 @@ export const ResetPassword=()=> {
       passwords.
     </p>
 
-    <div className="reset-password-field">
-      <label>New Password</label>
+   <div className="reset-password-field">
+  <label>New Password</label>
 
-      <div className="reset-password-input-box">
-        <img src={lock} alt="" />
-        <input
-          type="password"
-          placeholder="Min. 8 characters"
-        />
-      </div>
-    </div>
+  <div className="reset-password-input-box">
+    <img src={lock} alt="" className="left-icon" />
 
-    <div className="reset-password-field">
-      <label>Confirm New Password</label>
+    <input
+      type={showPassword ? "text" : "password"}
+      placeholder="Min. 8 characters"
+      value={newPassword}
+      onChange={(e) => setNewPassword(e.target.value)}
+    />
 
-      <div className="reset-password-input-box">
-        <img src={protectcode} alt="" />
-        <input
-          type="password"
-          placeholder="Repeat your password"
-        />
-      </div>
-    </div>
+  
+  </div>
+</div>
 
-    <div className="reset-password-rules">
+<div className="reset-password-field">
+  <label>Confirm New Password</label>
 
-      <div className="reset-rule-item">
-        <span className="reset-rule-circle"></span>
-        <p>At least 8 characters</p>
-      </div>
+  <div className="reset-password-input-box">
+    <img src={protectcode} alt="" className="left-icon" />
 
-      <div className="reset-rule-item">
-        <span className="reset-rule-circle"></span>
-        <p>Passwords match</p>
-      </div>
+    <input
+      type={showConfirmPassword ? "text" : "password"}
+      placeholder="Repeat your password"
+      value={confirmPassword}
+      onChange={(e) => setConfirmPassword(e.target.value)}
+    />
 
-    </div>
+    
+   
+  </div>
+</div>
 
-    <button className="reset-password-btn" onClick={() => navigate("/ResetPasswordSuccess")}>
+{error && <p className="reset-error">{error}</p>}
+
+<div className="reset-password-rules">
+  <div className="reset-rule-item">
+    <span className="reset-rule-circle"></span>
+    <p>At least 8 characters</p>
+  </div>
+
+  <div className="reset-rule-item">
+    <span className="reset-rule-circle"></span>
+    <p>Passwords match</p>
+  </div>
+</div>
+   <button
+  className="reset-password-btn"
+  onClick={handleUpdatePassword}
+>
       Update Password
       <img src={arrow} alt="" />
     </button>
