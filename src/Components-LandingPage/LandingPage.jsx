@@ -14,6 +14,7 @@ import bluearrow from "../assets/landingpage/bluearrow.png"
 import {Footer} from './Footer';
 
 
+
 export const LandingPage = () => {
   return (
     <div>

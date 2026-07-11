@@ -61,7 +61,7 @@ export const ResetPasswordSuccess=() => {
           anyone.
         </p>
 
-        <button className="login-btn" onClick={() => navigate("/")}>
+        <button className="login-btn" onClick={() => navigate("/login")}>
           Back to Login
         </button>
 

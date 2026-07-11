@@ -7,6 +7,7 @@ import {ForgotPassword} from "./Components-Login/ForgotPassword";
 import {ForgotPasswordOtp} from "./Components-Login/FrogotPasswordOtp";
 import {ResetPassword} from "./Components-Login/ResetPassword";
 import {ResetPasswordSuccess} from "./Components-Login/ResetPasswordSuccess";
+import {HRregistration} from "./Components-Registration/HRregistration"
 
 import "./App.css";
 
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
   {
     path: "/ResetPasswordSuccess",
     element: <ResetPasswordSuccess />,
+  },
+
+  {
+    path: "/HRregistration",
+    element: <HRregistration />,
   },
 ]);
 
