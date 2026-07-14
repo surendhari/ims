@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HRregistration.css"
+import { useNavigate } from "react-router-dom";
 import hrinternleft from "../assets/registration/hrinternleft.png"
 import eye from "../assets/registration/eye.png"
 import hr from "../assets/registration/hr.png"
@@ -9,6 +10,7 @@ import mentor from "../assets/registration/mentor.png"
 import inputcompany from "../assets/registration/inputcompany.png"
 
 export const HRregistration = ()=> {
+  const navigate = useNavigate();
     
   return (
     <div className='hr-main-container'>
@@ -55,12 +57,13 @@ export const HRregistration = ()=> {
 
     <div className="register-type">
 
-      <div className="register-box active">
+      <div className="register-box active" onClick={() => navigate("/HRregistration")}>       
         <img src={hr} alt="HR" />
         <p>HR</p>
       </div>
 
-      <div className="register-box">
+      <div className="register-box"
+         onClick={() => navigate("/MentorRegistration")}>
         <img src={mentor} alt="Mentor" />
         <p>Mentor</p>
       </div>

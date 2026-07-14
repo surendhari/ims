@@ -8,8 +8,7 @@ import {ForgotPasswordOtp} from "./Components-Login/FrogotPasswordOtp";
 import {ResetPassword} from "./Components-Login/ResetPassword";
 import {ResetPasswordSuccess} from "./Components-Login/ResetPasswordSuccess";
 import {HRregistration} from "./Components-Registration/HRregistration"
-
-import "./App.css";
+import { MentorRegistration } from "./Components-Registration/MentorRegistration";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/HRregistration",
     element: <HRregistration />,
+  },
+   {
+    path: "/MentorRegistration",
+    element: <MentorRegistration />,
   },
 ]);
 
