@@ -46,9 +46,7 @@ export const MentorRegistration =() => {
 
     const validate=()=>{
 
-        let newErrors={};
-
-        
+        let newErrors={};        
         if(!form.fullName.trim()){
 
             newErrors.fullName="Full name is required";
@@ -58,9 +56,6 @@ export const MentorRegistration =() => {
             newErrors.fullName="Only letters are allowed";
 
         }
-
-       
-
         if(!form.email){
 
             newErrors.email="Email is required";
@@ -70,9 +65,6 @@ export const MentorRegistration =() => {
             newErrors.email="Invalid email address";
 
         }
-
-      
-
         if(!form.phone){
 
             newErrors.phone="Phone number is required";
@@ -82,24 +74,16 @@ export const MentorRegistration =() => {
             newErrors.phone="Enter valid 10 digit phone number";
 
         }
-
- 
-
         if(!form.title.trim()){
 
             newErrors.title="Professional title is required";
 
         }
-
-
         if(!form.skills.trim()){
 
             newErrors.skills="Skills are required";
 
         }
-
-     
-
         if(!form.experience){
 
             newErrors.experience="Select experience";
@@ -116,9 +100,6 @@ export const MentorRegistration =() => {
             newErrors.bio="Minimum 20 characters";
 
         }
-
-       
-
         if(!form.password){
 
             newErrors.password="Password is required";
@@ -141,9 +122,6 @@ else if (form.confirmPassword !== form.password) {
     newErrors.confirmPassword = "Passwords do not match";
 
 }
-
-   
-
         if(!form.terms){
 
             newErrors.terms="Accept terms & conditions";
