@@ -9,6 +9,8 @@ import {ResetPassword} from "./Components-Login/ResetPassword";
 import {ResetPasswordSuccess} from "./Components-Login/ResetPasswordSuccess";
 import {HRregistration} from "./Components-Registration/HRregistration"
 import { MentorRegistration } from "./Components-Registration/MentorRegistration";
+import { CompanyRegistration } from "./Components-Registration/CompanyRegistration";
+import { InternRegistration } from "./Components-Registration/InternRegistration";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,16 @@ const router = createBrowserRouter([
     path: "/MentorRegistration",
     element: <MentorRegistration />,
   },
+  {
+    path:"/InternRegistration",
+    element:<InternRegistration/>,
+  },
+  {
+    path: "/CompanyRegistration",
+    element:<CompanyRegistration/>
+  },
+
+  
 ]);
 
 function App() {

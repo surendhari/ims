@@ -8,7 +8,7 @@
 }
 
 .mentor-left-container{
-    width:40%;
+    width:45%;
     background: linear-gradient(to bottom , #16224B , #26569F);
     color: white;
      padding:  30px 30px;
@@ -61,7 +61,7 @@
 
 
 .mentor-right-container{
-    width:55%;
+    width:50%;
     padding:40px;
     margin-left: 20px;
 }
@@ -184,31 +184,35 @@
     font-size:12px;
     color:#888;
 }
-
 .password-box{
-    display:flex;
-    align-items:center;
-    border:1px solid #d8d8d8;
-    border-radius:10px;
-    overflow:hidden;
+    position: relative;
+    width: 100%;
 }
 
 .password-box input{
-    border:none;
-    flex:1;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    padding: 13px 45px 13px 15px;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+    box-sizing: border-box;
 }
 
-.password-box img{
-    width:22px;
-    height:22px;
-    margin-right:15px;
-    cursor:pointer;
+.password-box input:focus{
+    border-color: #2E5AC7;
 }
 
-.password-box:focus-within{
-    border-color:#2E5AC7;
+.eye-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
-
 small{
     color:#E53935;
     margin-top:5px;
@@ -283,7 +287,9 @@ small{
     cursor:pointer;
 }
 
-/* Responsive */
+
+
+
 
 @media(max-width:992px){
 

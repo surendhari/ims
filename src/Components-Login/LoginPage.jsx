@@ -3,6 +3,7 @@ import "./Login.css";
 import mail from "../assets/loginpage/mail.png";
 import lock from "../assets/loginpage/lock.png";
 import eye from "../assets/loginpage/eye.png";
+import eyeClose from "../assets/loginpage/eyeclose.png";
 import google from "../assets/loginpage/google.png";
 import arrow from "../assets/loginpage/arrow.png";
 
@@ -126,11 +127,11 @@ export const LoginPage=()=> {
             />
 
             <img
-              src={eye}
-              alt="eye"
-              className="eye-icon"
-              onClick={() => setShowPassword(!showPassword)}
-            />
+  src={showPassword ? eyeClose : eye}
+  alt="eye"
+  className="eye-icon"
+  onClick={() => setShowPassword(!showPassword)}
+/>
           </div>
 
           {errors.password && (
