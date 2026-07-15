@@ -11,6 +11,7 @@ import {HRregistration} from "./Components-Registration/HRregistration"
 import { MentorRegistration } from "./Components-Registration/MentorRegistration";
 import { CompanyRegistration } from "./Components-Registration/CompanyRegistration";
 import { InternRegistration } from "./Components-Registration/InternRegistration";
+import { AdminRegistration } from "./Components-Registration/AdminRegistration";
 
 const router = createBrowserRouter([
   {
@@ -63,7 +64,10 @@ const router = createBrowserRouter([
     element:<CompanyRegistration/>
   },
 
-  
+  {
+    path:"/AdminRegistration",
+    element:<AdminRegistration/>
+  } 
 ]);
 
 function App() {

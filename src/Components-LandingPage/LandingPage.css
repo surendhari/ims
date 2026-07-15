@@ -141,11 +141,7 @@ body{
 
 
 
-
-
-
-
-.status{
+.landing-status{
     width:100%;
     background:#FFFFFF;
     display:flex;
@@ -156,18 +152,18 @@ body{
 }
 
 
-.sts-box{
+.landing-sts-box{
     text-align:center;
 }
 
-.sts-box h2{
+.landing-sts-box h2{
     font-size:36px;
     font-weight:900;
     margin-bottom:2px;
     letter-spacing:2px;
 }
 
-.sts-box p{
+.landing-sts-box p{
     font-size:10px;
     font-weight: 500px;
     letter-spacing:0.5px;

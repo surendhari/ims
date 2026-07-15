@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import {NavBar} from "./NavBar";
 import nextgen from "../assets/landingpage/nextgen.png";
 import imsdashboard from "../assets/landingpage/imsdashboard.png"
@@ -16,6 +16,7 @@ import {Footer} from './Footer';
 
 
 export const LandingPage = () => {
+  const [activeTab, setActiveTab] = useState("Students");
   return (
     <div>
      <NavBar /> 
@@ -67,19 +68,19 @@ and world-class employers.
 
 
 
-    <section className='status'>
-    <div className="sts-box">
+    <section className='landing-status'>
+    <div className="landing-sts-box">
     <h2>500+</h2>
     <p>UNIVERSITIES</p>
      </div>
 
-    <div className="sts-box">
+    <div className="landing-sts-box">
     <h2>10k+</h2>
     <p> GLOBAL COMPANIES</p>
      </div>
 
  
- <div className="sts-box">
+ <div className="landing-sts-box">
     <h2>1M+</h2>
     <p>PLACEMENTS</p>
      </div>
@@ -184,10 +185,29 @@ reminders.
       </div>
 
       <div className="category-buttons">
-        <button className="active">Students</button>
-        <button>Employers</button>
-        <button>Universities</button>
-      </div>
+
+  <button
+    className={activeTab === "Students" ? "active" : ""}
+    onClick={() => setActiveTab("Students")}
+  >
+    Students
+  </button>
+
+  <button
+    className={activeTab === "Employers" ? "active" : ""}
+    onClick={() => setActiveTab("Employers")}
+  >
+    Employers
+  </button>
+
+  <button
+    className={activeTab === "Universities" ? "active" : ""}
+    onClick={() => setActiveTab("Universities")}
+  >
+    Universities
+  </button>
+
+</div>
 
     </div>
 

@@ -14,7 +14,7 @@ export const NavBar = () => {
         <Link to="/login" className="Nav-login-btn">
     Login
   </Link>
-        <button className="register-btn"   onClick={() => navigate("/HRregistration")}>Register</button>
+        <button className="nav-register-btn"   onClick={() => navigate("/HRregistration")}>Register</button>
       </div>
     </nav>
   );
