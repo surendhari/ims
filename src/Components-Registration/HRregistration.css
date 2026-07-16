@@ -10,7 +10,7 @@
 }
 
 .hr-left-container{
-    width: 45%;
+    width: 40%;
  
     background: linear-gradient(to bottom, #3571CA,#29436B);
     padding:  30px 30px;
@@ -74,7 +74,7 @@
 .hr-right-container{
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 50%;
+    width: 60%;
     margin-left: 40px;  
     background: #fff;
     display: flex;

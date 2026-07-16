@@ -10,7 +10,7 @@
 
 .company-left-container{
     background: linear-gradient(to bottom , #467EE5,#1B2F4C);
-    width: 45%;
+    width: 40%;
     color: white;
     padding: 40px;
 }
@@ -55,8 +55,8 @@
 }
 
 .company-right-container{
-    width: 50%;
-    padding: 40px 30px;
+    width: 60%;
+    padding: 40px 80px;
 }
 
 

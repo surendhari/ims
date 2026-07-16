@@ -8,7 +8,7 @@
 }
 
 .mentor-left-container{
-    width:45%;
+    width:40%;
     background: linear-gradient(to bottom , #16224B , #26569F);
     color: white;
      padding:  30px 30px;
@@ -61,7 +61,7 @@
 
 
 .mentor-right-container{
-    width:50%;
+    width:60%;
     padding:40px;
     margin-left: 20px;
 }

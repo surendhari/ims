@@ -202,7 +202,7 @@ const handleSubmit = (e) => {
     </div>
 
     <form className="company-form" onSubmit={handleSubmit}>
-
+<div className="form-row">
      <div className="form-group">
   <label>Company Name *</label>
 
@@ -234,6 +234,11 @@ const handleSubmit = (e) => {
     <small className="error">{errors.website}</small>
   )}
 </div>
+
+</div>
+
+
+
       <div className="form-row">
 
        <div className="form-group">

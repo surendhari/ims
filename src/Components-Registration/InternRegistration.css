@@ -6,7 +6,7 @@
     display:flex;
 }
 .intern-left-container {
-    width: 45%;
+    width: 40%;
     background: linear-gradient(to bottom, #16224B, #26569F);
     color: white;
     padding: 70px 70px;
@@ -73,7 +73,7 @@
     align-items:center ;
 }
 .intern-right-container{
-          width:50%;
+          width:60%;
           padding:40px;
           margin-left: 20px;
 }

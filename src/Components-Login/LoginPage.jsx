@@ -150,9 +150,15 @@ export const LoginPage=()=> {
             <img src={arrow} alt="arrow" />
           </button>
 
-          <div className="divider">
-            <span>OR CONTINUE WITH</span>
-          </div>
+            <div className="divider">
+
+      <span></span>
+
+      <p>OR</p>
+
+      <span></span>
+
+    </div>
 
           <div className="google-align">
             <button type="button" className="google-btn">
@@ -163,7 +169,7 @@ export const LoginPage=()=> {
             <p className="create">
               Don't have an account?
 
-              <a href="/"> Create Account</a>
+              <a href="/HRregistration"> Create Account</a>
             </p>
           </div>
 

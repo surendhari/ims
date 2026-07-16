@@ -112,6 +112,7 @@ const handleSubmit = (e) => {
 
 
   return (
+     <div>
     <div className="admin-registration-main">
       <div className="admin-registration-container">
         <p>InterMS</p>
@@ -384,11 +385,19 @@ const handleSubmit = (e) => {
       <span> Sign In</span>
     </p>
  </form>
-  </div>
-  
+  </div> 
 </div>
 
- 
+  <div className="admin-nav">
+    <div> <p>&copy; 2024 InternMS.All rights reserved.</p></div>
+   
+    <div className="nav-links">
+      <a href="">Privacy Policy</a>
+      <a href="">Ters of Service</a>
+      <a href="">Support</a>
+    </div>
+  </div>
+ </div>
   );
 }
 

@@ -6,8 +6,8 @@
     display: flex;
 }
 .admin-registration-container{
-    width: 45%;
-    background: linear-gradient(to bottom, #16224B, #26569F);
+    width: 40%;
+    background: linear-gradient(to top, #16224B, #26569F);
     color: white;
     padding: 70px 70px;
 }
@@ -49,11 +49,12 @@
 }
 .admin-image-content img{
               width:25px;
-              height:25px;
+              height:30px;
 }
 .admin-image-content h6{
     font-size: 14px;
-    font-weight: 600;
+    margin-bottom: 4px;
+    font-weight: 300;
     color: #FFFFFF;
 }
 .admin-image-content p{
@@ -65,7 +66,7 @@
 
 
 .admin-right-container{
-    width:55%;
+    width:60%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -276,4 +277,18 @@
     font-size:12px;
     margin-top:5px;
     font-weight:500;
+}
+
+.admin-nav{
+ display: flex;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: #F0F3FF;
+ color:#464555 ;
+}
+
+.nav-links a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: #464555;
 }
