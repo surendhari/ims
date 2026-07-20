@@ -113,7 +113,7 @@
 
 .register-box img{
     width:34px;
-    height:34px;
+    height:24px;
     margin-bottom:8px;
 }
 
@@ -219,23 +219,20 @@ small{
     font-size:12px;
 }
 
-.terms-box{
-    display:flex;
-    align-items:flex-start;
-    gap:10px;
-    margin:20px 0;
+.mentor-terms-box{
+  display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.terms-box input{
-    margin-top:4px;
-}
 
-.terms-box p{
+.mentor-terms-box p{
     font-size:14px;
     color:#555;
 }
 
-.terms-box span{
+.mentor-terms-box span{
     color:#2E5AC7;
     font-weight:600;
 }
@@ -286,39 +283,25 @@ small{
     font-weight:600;
     cursor:pointer;
 }
-
-
-
-
-
-@media(max-width:992px){
-
-    .mentor-main{
-        flex-direction:column;
-    }
-
-    .mentor-left-container,
-    .mentor-right-container{
-        width:100%;
-    }
-
-    .mentor-form-row{
-        grid-template-columns:1fr;
-    }
-
-    .register-type{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .mentor-register-card{
-        padding:25px;
-    }
-
-    .mentor-left-content h1{
-        font-size:34px;
-        line-height:46px;
-    }
-
+.footerhr{
+    width: 100%;
+    height: 0.5px;
+    border: none;
+    background: #C7C4D8;
 }
 
+.mentorfooter{
+    display: flex;
+    justify-content: space-between;
+    color: #464555;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.mentor-footer-link a{
+    text-decoration: none;
+    gap: 20px;
+    padding-right: 20px;
+    color: #464555;
+}
 

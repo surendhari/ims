@@ -383,7 +383,7 @@ const [errors, setErrors] = useState({});
 </div>
 </div>
 
-<div className="terms">
+<div className="intern-terms">
   <input
     type="checkbox"
     name="agree"

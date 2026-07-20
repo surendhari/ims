@@ -48,7 +48,7 @@
      gap:16px;  
 }
 .admin-image-content img{
-              width:25px;
+              width:35px;
               height:30px;
 }
 .admin-image-content h6{
@@ -201,28 +201,25 @@
 }
 
 .eye-icon{
-    width:18px;
-    height:18px;
+    width:14px;
+    height:14px;
     cursor:pointer;
 }
 
-.terms-box{
+.admin-terms-box{
     display:flex;
     align-items:flex-start;
     gap:10px;
     margin:20px 0;
 }
 
-.terms-box input{
-    margin-top:4px;
-}
 
-.terms-box p{
+.admin-terms-box p{
     font-size:13px;
     color:#6B7280;
 }
 
-.terms-box span{
+.admin-terms-box span{
     color:#4338CA;
     font-weight:600;
 }

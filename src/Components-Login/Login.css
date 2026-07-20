@@ -123,6 +123,14 @@
     font-size:12px;
 }
 
+.lock-input-icon{
+      position:absolute;
+    left:16px;
+    top:50%;
+    transform:translateY(-50%);
+    width:14px;
+}
+
 
 .input-icon{
     position:absolute;
@@ -185,7 +193,7 @@
 .divider{
     position:relative;
     text-align:center;
-    margin:28px 0;
+    margin:38px 0;
 }
 
 .divider::before,
@@ -193,7 +201,7 @@
     content:"";
     position:absolute;
     top:50%;
-    width:35%;
+    width:30%;
     height:1px;
     background:#ddd;
 }

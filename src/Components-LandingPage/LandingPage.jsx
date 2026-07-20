@@ -142,8 +142,9 @@ reminders.
 <section className="student">
 
   <div className="steps-container">
-
     <div className="step-card">
+
+    <div>
 
       <h2 className="student-heading">
         For Students:
@@ -210,11 +211,13 @@ reminders.
 </div>
 
     </div>
+    </div>
+    <div>
 
     <div className="student-image-box">
       <img src={office} alt="Office" />
     </div>
-
+</div>
   </div>
 
 </section>

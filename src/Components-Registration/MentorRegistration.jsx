@@ -420,7 +420,7 @@ setForm({...form,phone:value});
 
     </div>
 
-    <div className="terms-box">
+    <div className="mentor-terms-box">
 
       <input
         type="checkbox"
@@ -454,7 +454,15 @@ setForm({...form,phone:value});
       Already have an account?
       <span onClick={() => navigate("/login")}> Sign In</span>
     </p>
-<hr />
+<hr className="footerhr"/>
+<div className="mentorfooter">
+  <div> <p>&copy; InternHub. All rights reserved.</p></div>
+  <div className="mentor-footer-link">
+    <a href="">support</a>
+  <a href="">Contact Us</a>
+  </div>
+
+</div>
   </form>
   
 

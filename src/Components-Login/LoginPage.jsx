@@ -117,7 +117,7 @@ export const LoginPage=()=> {
           </div>
 
           <div className="input-box">
-            <img src={lock} alt="lock" className="input-icon" />
+            <img src={lock} alt="lock" className="lock-input-icon" />
 
             <input
               type={showPassword ? "text" : "password"}
@@ -154,7 +154,7 @@ export const LoginPage=()=> {
 
       <span></span>
 
-      <p>OR</p>
+      <p>OR CONTINUE WITH</p>
 
       <span></span>
 

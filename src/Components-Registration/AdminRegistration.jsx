@@ -346,7 +346,7 @@ const handleSubmit = (e) => {
 
     </div>
 
-    <div className="terms-box">
+    <div className="admin-terms-box">
 
       <input
   type="checkbox"

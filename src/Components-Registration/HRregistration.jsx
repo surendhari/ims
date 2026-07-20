@@ -129,10 +129,7 @@ const handleSubmit = (e) => {
  </div>
         </div>
 
-
-
-
-
+        
        <div className="hr-right-container">
 
   <form className="hr-register-card" onSubmit={handleSubmit}>
@@ -331,7 +328,7 @@ const handleSubmit = (e) => {
 
     </div>
 
-    <div className="terms-box">
+    <div className="hr-terms-box">
 
      <input
   type="checkbox"
