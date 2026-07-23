@@ -69,6 +69,9 @@ const router = createBrowserRouter([
     element:<AdminRegistration/>
   } 
 ],
+ {
+    basename: "/ims",
+  }
 );
 
 function App() {
