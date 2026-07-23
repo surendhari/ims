@@ -404,8 +404,14 @@ const [errors, setErrors] = useState({});
 </button>
 
 <div className="divider">
-  <span>OR</span>
-</div>
+
+      <span></span>
+
+      <p>OR</p>
+
+      <span></span>
+
+    </div>
 
 <p className="signin-text">
   Already have an account?{" "}

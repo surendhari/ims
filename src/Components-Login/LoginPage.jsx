@@ -6,8 +6,10 @@ import eye from "../assets/loginpage/eye.png";
 import eyeClose from "../assets/loginpage/eyeclose.png";
 import google from "../assets/loginpage/google.png";
 import arrow from "../assets/loginpage/arrow.png";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage=()=> {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   const [email, setEmail] = useState("");
@@ -113,7 +115,12 @@ export const LoginPage=()=> {
           <div className="password-row">
             <label>Password</label>
 
-            <a href="/twostepverification">Forgot Password?</a>
+           <p
+  className="forgot-link"
+  onClick={() => navigate("/twostepverification")}
+>
+  Forgot Password?
+</p>
           </div>
 
           <div className="input-box">
@@ -169,7 +176,12 @@ export const LoginPage=()=> {
             <p className="create">
               Don't have an account?
 
-              <a href="/HRregistration"> Create Account</a>
+              <span
+  className="create-link"
+  onClick={() => navigate("/HRregistration")}
+>
+  Create Account
+</span>
             </p>
           </div>
 
