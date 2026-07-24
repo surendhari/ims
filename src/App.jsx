@@ -12,6 +12,9 @@ import { MentorRegistration } from "./Components-Registration/MentorRegistration
 import { CompanyRegistration } from "./Components-Registration/CompanyRegistration";
 import { InternRegistration } from "./Components-Registration/InternRegistration";
 import { AdminRegistration } from "./Components-Registration/AdminRegistration";
+import { HrDashboard } from "./Components-Hr/HrDashboard";
+import { HrDashboardSidebar } from "./Components-Hr/HrDashboardSidebar";
+import { HrDashboardNav } from "./Components-Hr/HrDashboardNav";
 
 const router = createBrowserRouter([
   {
@@ -67,7 +70,19 @@ const router = createBrowserRouter([
   {
     path:"/AdminRegistration",
     element:<AdminRegistration/>
-  } 
+  },
+  {
+    path:"/HrDashboard",
+    element:<HrDashboard/>
+  },
+  {
+    path:"/HrDashboardSidebar",
+    element:<HrDashboardSidebar/>
+  },
+  {
+    path:"/HrDashboardNav",
+    element:<HrDashboardNav/>
+  }
 ],
  {
     basename: "/ims",

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+/* Right Side */
+
+.dashboard-right{
+    flex: 1;
+    margin-left: 250px;   /* Same width as sidebar */
+    display: flex;
+    flex-direction: column;
+    background: #f5f7fb;
+}
+
+/* Welcome Section */
+
+.welcome{
+    padding: 30px;
+}
+
+.welcome h1{
+    font-size: 32px;
+    color: #222;
+    font-weight: 700;
+}
+
+.welcome p{
+    margin-top: 10px;
+    color: #666;
+    font-size: 15px;
+}
