@@ -13,8 +13,9 @@
     justify-content: space-between;
     color: #fff;
     position: fixed;
-   
-   
+    left: 0;
+    top: 0;
+    overflow-y: auto;
 }
 
 .logo-section{
