@@ -14,7 +14,7 @@ import notification from "../assets/hr-modules/activenotifications.png";
 import profile from "../assets/hr-modules/profile.png";
 import downarrow from "../assets/hr-modules/downarrow.png";
 import dashboard from "../assets/hr-modules/dashboard.png";
-import interns from "../assets/hr-modules/interns.png";
+import intern from "../assets/hr-modules/intern.png";
 import applications from "../assets/hr-modules/applications.png";
 import departments from "../assets/hr-modules/departments.png";
 import project from "../assets/hr-modules/project.png";
@@ -111,7 +111,7 @@ export const HrDashboard = () => {
   const [isOpen, setIsOpen] = useState(true);
 const menuItems = [
   { icon: dashboard, text: "Dashboard" },
-  { icon: interns, text: "Interns" },
+  { icon: intern, text: "Interns" },
   { icon: applications, text: "Applications" },
   { icon: departments, text: "Departments" },
   { icon: project, text: "Projects" },
