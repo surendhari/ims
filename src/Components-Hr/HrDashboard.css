@@ -689,11 +689,13 @@ table{
 thead th{
     text-align:left;
     padding-bottom:10px;
+    text-align: center;
     font-size:14px;
     color:#444;
 }
 
 tbody td{
+      text-align: center;
     padding:12px 0;
     font-size:14px;
 }
@@ -702,13 +704,13 @@ tbody td{
 .mentor-cell{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:18px;
 }
 
 .user-cell img,
 .mentor-cell img{
-    width:36px;
-    height:36px;
+    width:26px;
+    height:26px;
     border-radius:50%;
     object-fit:cover;
 }
