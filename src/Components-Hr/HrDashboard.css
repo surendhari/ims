@@ -3,30 +3,30 @@
     padding: 0;
 }
 
-.dashboard-main{
+.hr-dashboard-main{
     display: flex;
     width: 100%;
     
 }
 
-.dashboard-right{
+.hr-dashboard-right{
     flex: 1;
     margin-left: 250px;   
     display: flex;
     flex-direction: column;
 
 }
-.dashboard-right{
+.hr-dashboard-right{
     flex:1;
     margin-left:250px;
     transition:0.3s ease;
 }
  
-.dashboard-right.open{
+.hr-dashboard-right.open{
     margin-left:250px;
 }
  
-.dashboard-right.close{
+.hr-dashboard-right.close{
     margin-left:0;
 }
 
@@ -47,14 +47,14 @@
     font-size: 15px;
 }
 
-.cards{
+.hr-dashboard-cards{
     display: flex;
     justify-content: space-between;
     padding:20px;
   
 }
 
-.card-box{
+.hr-dashboard-card-box{
     display: flex;
     justify-content: center;
     gap:20px;
@@ -65,27 +65,94 @@
     box-shadow: 4px 4px 12px rgba(69, 65, 65, 0.12);
 }
 
-.card-box img{
+.hr-dashboard-card-box img{
           height:30px;
           width:40px;
           margin-top: 10px;
 }
 
-.card-box h6{
+.hr-dashboard-card-box h6{
     color:#1E40AF;
     font-size: 14px;
     
 }
-.card-box h5{
+.hr-dashboard-card-box h5{
     margin-top: 3px;
     margin-bottom: 3px;
 }
 
-.card-box p{
+.hr-dashboard-card-box p{
         font-size: 12px;
 }
 
-.card-box span{
+.hr-dashboard-card-box span{
         color:#139320;
         
+}
+
+
+.charts-wrapper{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.chart-card{
+    flex:1;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:20px;
+}
+
+.chart-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.chart-header h3{
+    font-size:24px;
+    font-weight:700;
+}
+
+.chart-header select{
+    width:120px;
+    height:38px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    padding-left:10px;
+    background:white;
+    cursor:pointer;
+}
+
+.pie-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.legend{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.legend-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.legend-item span:last-child{
+    margin-left:auto;
+    color:#555;
 }
