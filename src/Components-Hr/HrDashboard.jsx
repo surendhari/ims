@@ -309,7 +309,7 @@ const CustomTooltip = ({ active, payload }) => {
 <div className="hr-dashboard-card-box">
 
   <img src={totalinterns} alt="" />
-  <div>
+  <div className="card-content">
     <h6>Total Interns</h6>
     <h5>128</h5>
     <p>
@@ -321,7 +321,7 @@ const CustomTooltip = ({ active, payload }) => {
 
 <div className="hr-dashboard-card-box">
   <img src={activeinternships} alt="" />
-  <div>
+  <div className="card-content">
     <h6>Active Internships</h6>
     <h5>84</h5>
     <p>
@@ -332,7 +332,7 @@ const CustomTooltip = ({ active, payload }) => {
 
 <div className="hr-dashboard-card-box">
   <img src={newapplications} alt="" />
-  <div>
+  <div className="card-content">
     <h6>New Applications</h6>
     <h5>32</h5>
     <p>
@@ -343,7 +343,7 @@ const CustomTooltip = ({ active, payload }) => {
 
 <div className="hr-dashboard-card-box">
   <img src={ongoingproject} alt="" />
-  <div>
+  <div className="card-content">
     <h6>Ongoing Project</h6>
     <h5>23</h5>
     <p>
