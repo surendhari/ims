@@ -19,13 +19,13 @@
 }
 
 .logo-section{
-    padding: 28px 20px;
+    padding: 10px 20px;
 }
 
 .logo-section h2{
     font-size: 26px;
     font-weight: 700;
-    margin-bottom: 5px;
+  
 }
 
 .logo-section p{
@@ -125,7 +125,7 @@
 
 .sidebar-profile{
     display: flex;
-   margin:  70px 10px;
+   margin:  10px 10px;
    background: #00000040;   
 }
 
@@ -162,7 +162,7 @@
     display:flex;
     align-items:center;
     gap:15px;
-    padding:12px 18px;
+  
 }
 
 .sidebar-mini .menu-item{
@@ -175,7 +175,7 @@
 .sidebar-profile{
     display:flex;
     align-items:center;
-    gap:12px;
+   
 }
 
 .sidebar-mini .sidebar-profile{
