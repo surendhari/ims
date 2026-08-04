@@ -207,19 +207,19 @@ const CustomTooltip = ({ active, payload }) => {
     
     <div className="hr-dashboard-main">
 
-<div className={isOpen ? "sidebar" : "sidebar sidebar-mini"}>
+<div className={isOpen ? "hr-dashboard-sidebar" : " hr-dashboard-sidebar-mini"}>
 
-      <div className="logo-section">
+      <div className="hr-dashboard-logo-section">
         <h2>Intern MS</h2>
         <p>HR Dashboard</p>
       </div>
 
-      <div className="menu-list">
+      <div className="hr-dashboard-menu-list">
 
         {menuItems.map((item, index) => (
          <div
   key={index}
-  className={`menu-item ${index === 0 ? "active" : ""}`}
+  className={`hr-dashboard-menu-item ${index === 0 ? "active" : ""}`}
 >
   <img src={item.icon} alt={item.text} />
 
@@ -229,9 +229,9 @@ const CustomTooltip = ({ active, payload }) => {
 
       </div>
 
-<div className="sidebar-profile">
+<div className="hr-dashboard-sidebar-profile">
 
-    <img src={sidebarprofile} alt="" />
+    <img src={sidebarprofile} alt="Sidebar Profile" />
 
     {isOpen && (
       <>
@@ -240,8 +240,8 @@ const CustomTooltip = ({ active, payload }) => {
           <p>HR Manager</p>
         </div>
 
-        <div className="sidebararrow">
-          <img src={whitearrow} alt="" />
+        <div className="hr-dashboard-sidebararrow">
+          <img src={whitearrow} alt="White Arrow" />
         </div>
       </>
     )}
@@ -250,9 +250,9 @@ const CustomTooltip = ({ active, payload }) => {
     </div>
 
     <div className={isOpen ? "hr-dashboard-right" : "hr-dashboard-right mini"}>
-       <div className="topbar">
+       <div className="hr-dashboard-topbar">
 
-      <div className="top-left">
+      <div className="hr-dashboard-top-left">
         <img src={menu} alt="Menu" onClick={toggleSidebar}  style={{cursor:"pointer"}}/>
 
         <div>
@@ -261,23 +261,23 @@ const CustomTooltip = ({ active, payload }) => {
         </div>
       </div>
 
-      <div className="top-search">
+      <div className="hr-dashboard-top-search">
         <img src={search} alt="Search" />
         <input type="text" placeholder="Search anything..." />
       </div>
 
-      <div className="top-right">
+      <div className="hr-dashboard-top-right">
 
         <img
           src={notification}
           alt="Notification"
-          className="nav-icon"
+          className="hr-dashboard-nav-icon"
         />
 
-        <div className="nav-profile">
+        <div className="hr-dashboard-nav-profile">
           <img src={profile} alt="Profile" />
 
-          <div className="nav-profile-info">
+          <div className="hr-dashboard-nav-profile-info">
             <h4>HR</h4>
             <p>HR Dashboard</p>
           </div>
@@ -285,7 +285,7 @@ const CustomTooltip = ({ active, payload }) => {
           <img
             src={downarrow}
             alt="Down Arrow"
-            className="down"
+            className="hr-dashboard-down"
           />
         </div>
 
@@ -294,7 +294,7 @@ const CustomTooltip = ({ active, payload }) => {
     </div>
 
        
-        <div className="welcome">
+        <div className="hr-dashboard-welcome">
 
           <h1>Welcome back, Sudhakar!</h1>
 
@@ -308,8 +308,8 @@ const CustomTooltip = ({ active, payload }) => {
 
 <div className="hr-dashboard-card-box">
 
-  <img src={totalinterns} alt="" />
-  <div className="card-content">
+  <img src={totalinterns} alt="Total Interns" />
+  <div className="hr-dashboard-card-content">
     <h6>Total Interns</h6>
     <h5>128</h5>
     <p>
@@ -320,8 +320,8 @@ const CustomTooltip = ({ active, payload }) => {
 </div>
 
 <div className="hr-dashboard-card-box">
-  <img src={activeinternships} alt="" />
-  <div className="card-content">
+  <img src={activeinternships} alt="Active Internships" />
+  <div className="hr-dashboard-card-content">
     <h6>Active Internships</h6>
     <h5>84</h5>
     <p>
@@ -331,8 +331,8 @@ const CustomTooltip = ({ active, payload }) => {
 </div>
 
 <div className="hr-dashboard-card-box">
-  <img src={newapplications} alt="" />
-  <div className="card-content">
+  <img src={newapplications} alt="New Applications" />
+  <div className="hr-dashboard-card-content">
     <h6>New Applications</h6>
     <h5>32</h5>
     <p>
@@ -342,8 +342,8 @@ const CustomTooltip = ({ active, payload }) => {
 </div>
 
 <div className="hr-dashboard-card-box">
-  <img src={ongoingproject} alt="" />
-  <div className="card-content">
+  <img src={ongoingproject} alt="Ongoing Project" />
+  <div className="hr-dashboard-card-content">
     <h6>Ongoing Project</h6>
     <h5>23</h5>
     <p>
@@ -355,12 +355,12 @@ const CustomTooltip = ({ active, payload }) => {
 </div>
 
 
-<div className="charts-wrapper">
+<div className="hr-dashboard-charts-wrapper">
  
-      <div className="chart-card">
+      <div className="hr-dashboard-chart-card">
 
-        <div className="chart-header">
-          <h3>Internns Overview</h3>
+        <div className="hr-dashboard-chart-header">
+          <h3>Interns Overview</h3>
 
           <select>
             <option>This Month</option>
@@ -385,13 +385,13 @@ const CustomTooltip = ({ active, payload }) => {
         </ResponsiveContainer>
       </div>
 
-      <div className="chart-card">
+      <div className="hr-dashboard-chart-card">
 
-        <div className="chart-header">
+        <div className="hr-dashboard-chart-header">
           <h3>Interns by Department</h3>
         </div>
 
-        <div className="pie-section">
+        <div className="hr-dashboard-pie-section">
 
           <ResponsiveContainer width={230} height={230}>
             <PieChart>
@@ -412,8 +412,8 @@ const CustomTooltip = ({ active, payload }) => {
                 x="50%"
                 y="47%"
                 textAnchor="middle"
-                fontSize="34"
-                fontWeight="700"
+                fontSize="32"
+                fontWeight="500"
               >
                 {total}
               </text>
@@ -422,7 +422,7 @@ const CustomTooltip = ({ active, payload }) => {
                 x="50%"
                 y="60%"
                 textAnchor="middle"
-                fontSize="14"
+                fontSize="20"
                 fill="#777"
               >
                 Total
@@ -431,13 +431,13 @@ const CustomTooltip = ({ active, payload }) => {
             </PieChart>
           </ResponsiveContainer>
 
-          <div className="legend">
+          <div className="hr-dashboard-legend">
 
             {pieData.map((item) => (
-              <div className="legend-item" key={item.name}>
+              <div className="hr-dashboard-legend-item" key={item.name}>
 
                 <span
-                  className="dot"
+                  className="hr-dashboard-dot"
                   style={{ background: item.color }}
                 ></span>
 
@@ -457,14 +457,14 @@ const CustomTooltip = ({ active, payload }) => {
         </div>
 
 
-        <div className="milestone-card">
+        <div className="hr-dashboard-milestone-card">
 
   <h3>Upcoming Milestones</h3>
 
   {milestones.map((item, index) => (
-    <div className="milestone-item" key={index}>
+    <div className="hr-dashboard-milestone-item" key={index}>
 
-      <div className="milestone-left">
+      <div className="hr-dashboard-milestone-left">
         <img src={item.icon} alt={item.title} />
 
         <div>
@@ -473,7 +473,7 @@ const CustomTooltip = ({ active, payload }) => {
         </div>
       </div>
 
-      <div className="milestone-right">
+      <div className="hr-dashboard-milestone-right">
         <h5>{item.date}</h5>
         <span>{item.days}</span>
       </div>
@@ -491,9 +491,9 @@ const CustomTooltip = ({ active, payload }) => {
 
 
 
-        <div className="intern-status-wrapper">
+        <div className="hr-dashboard-intern-status-wrapper">
 
-      <div className="recent-card">
+      <div className="hr-dashboard-recent-card">
 
         <h2>Recent Interns</h2>
 
@@ -515,22 +515,22 @@ const CustomTooltip = ({ active, payload }) => {
 
               <tr key={index}>
 
-                <td className="user-cell">
-                  <img src={item.image} alt="" />
+                <td className="hr-dashboard-user-cell">
+                  <img src={item.image} alt="item.image" />
                   <span>{item.name}</span>
                 </td>
 
                 <td>{item.department}</td>
 
-                <td className="mentor-cell">
-                  <img src={item.mentorImg} alt="" />
+                <td className="hr-dashboard-mentor-cell">
+                  <img src={item.mentorImg} alt="mentorImg" />
                   <span>{item.mentor}</span>
                 </td>
 
                 <td>{item.date}</td>
 
                 <td>
-                  <button className="active-btn">
+                  <button className="hr-dashboard-active-btn">
                     Active
                   </button>
                 </td>
@@ -546,45 +546,45 @@ const CustomTooltip = ({ active, payload }) => {
       </div>
 
   
-      <div className="status-card">
+      <div className="hr-dashboard-status-card">
 
         <h2>Applications Status</h2>
 
-        <div className="status-row">
-          <div className="status-left">
-            <img src={totalapplications} alt="" />
+        <div className="hr-dashboard-status-row">
+          <div className="hr-dashboard-status-left">
+            <img src={totalapplications} alt="Total Applications" />
             <span>Total Applications</span>
           </div>
           <h3>156</h3>
         </div>
 
-        <div className="status-row">
-          <div className="status-left">
-            <img src={review} alt="" />
+        <div className="hr-dashboard-status-row">
+          <div className="hr-dashboard-status-left">
+            <img src={review} alt="Under Review" />
             <span>Under Review</span>
           </div>
           <h3>32</h3>
         </div>
 
-        <div className="status-row">
-          <div className="status-left">
-            <img src={shortlisted} alt="" />
+        <div className="hr-dashboard-status-row">
+          <div className="hr-dashboard-status-left">
+            <img src={shortlisted} style={{width:"28px",height:"23px"}} alt="Shortlisted" />
             <span>Shortlisted</span>
           </div>
           <h3>28</h3>
         </div>
 
-        <div className="status-row">
-          <div className="status-left">
-            <img src={selected} alt="" />
+        <div className="hr-dashboard-status-row">
+          <div className="hr-dashboard-status-left">
+            <img src={selected} alt="Selected" />
             <span>Selected</span>
           </div>
           <h3>18</h3>
         </div>
 
-        <div className="status-row">
-          <div className="status-left">
-            <img src={rejected} alt="" />
+        <div className="hr-dashboard-status-row">
+          <div className="hr-dashboard-status-left">
+            <img src={rejected} alt="Rejected" />
             <span>Rejected</span>
           </div>
           <h3>78</h3>
