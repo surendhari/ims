@@ -207,7 +207,7 @@ const CustomTooltip = ({ active, payload }) => {
     
     <div className="hr-dashboard-main">
 
-<div className={isOpen ? "hr-dashboard-sidebar" : " hr-dashboard-sidebar-mini"}>
+<div className={isOpen ? "hr-dashboard-sidebar" : "hr-dashboard-sidebar-mini"}>
 
       <div className="hr-dashboard-logo-section">
         <h2>Intern MS</h2>
