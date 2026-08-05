@@ -1,13 +1,12 @@
 import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 import "./ResetPassword.css"
 import resetprotect from "../assets/loginpage/resetprotect.png"
 import forgot from "../assets/loginpage/forgot.png";
 import lock from "../assets/loginpage/lock2.png";
 import protectcode from "../assets/loginpage/protectcode.png";
 import arrow from "../assets/loginpage/arrow.png";
-import eye from "../assets/loginpage/eye.png";
-import eyeclose from "../assets/loginpage/eyeclose.png";
+import backarrow from "../assets/loginpage/backarrow.png";
 
 
 
@@ -138,7 +137,9 @@ const [error, setError] = useState("");
     </button>
 
     <div className="reset-login-link" >
-      Back to Login
+       <Link to="/login" className="back-link">
+                         <img className="arrow" src={backarrow} alt="backarrow" /> Back to Login
+                       </Link>
     </div>
 
   </div>

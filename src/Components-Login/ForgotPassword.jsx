@@ -1,5 +1,5 @@
 import React, {  useRef, useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./ForgotPassword.css"
 
 import forgot from "../assets/loginpage/forgot.png"
@@ -88,8 +88,9 @@ export const ForgotPassword=() => {
         </button>
 
         <div className="back-login">
-          <img src={backarrow} alt="" />
-          <a href="">Back to Login</a>
+         <Link to="/login" className="back-link">
+                   <img className="arrow" src={backarrow} alt="backarrow" /> Back to Login
+                 </Link>
         </div>
 
       </div>
