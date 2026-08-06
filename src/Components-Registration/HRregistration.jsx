@@ -9,6 +9,7 @@ import intern from "../assets/registration/intern.png"
 import mentor from "../assets/registration/mentor.png"
 import eyeClose from "../assets/registration/eyeclose.png";
 import inputcompany from "../assets/registration/inputcompany.png"
+import admin from "../assets/registration/admin.png";
 
 export const HRregistration = ()=> {
   const navigate = useNavigate();
@@ -115,13 +116,13 @@ const handleSubmit = (e) => {
             </div>
 <div>
      </div>
-     <div className='sts-bar'>
-             <div className="sts-box">
+     <div className='HRregistration-sts-bar'>
+             <div className="HRregistration-sts-box">
     <h2>500+</h2>
     <p>COMPANIES</p>
      </div>
 
-    <div className="sts-box">
+    <div className="HRregistration-sts-box">
     <h2>10k+</h2>
     <p>STUDENTS</p>
     
@@ -140,32 +141,37 @@ const handleSubmit = (e) => {
       Join our ecosystem of professional employers.
     </p>
 
-    <label className="register-label">Registering as</label>
+    <label className="HRregistration-register-label">Registering as</label>
 
-    <div className="register-type">
-
-      <div className="register-box active" onClick={() => navigate("/HRregistration")}>       
+    <div className="HRregistration-register-type">
+    
+    <div className="HRregistration-register-box active" onClick={() => navigate("/HRregistration")}>       
         <img src={hr} alt="HR" />
         <p>HR</p>
       </div>
 
-      <div className="register-box"
+      <div className="HRregistration-register-box"
          onClick={() => navigate("/MentorRegistration")}>
         <img src={mentor} alt="Mentor" />
         <p>Mentor</p>
       </div>
 
-      <div className="register-box"
+      <div className="HRregistration-register-box"
       onClick={()=> navigate("/InternRegistration")}>
         <img src={intern} alt="Intern" />
         <p>Intern</p>
       </div>
 
-      <div className="register-box"
+      <div className="HRregistration-register-box"
       onClick={() => navigate("/CompanyRegistration")}>
         <img src={company} alt="Company" />
         <p>Company</p>
       </div>
+
+       <div className="HRregistration-register-box" onClick={()=>navigate("/AdminRegistration")}>
+              <img src={admin} alt="Admin" />
+              <p>Admin</p>
+            </div>
 
     </div>
 
@@ -209,7 +215,7 @@ const handleSubmit = (e) => {
    <div className="hr-input-group">
   <label>Phone Number <span>*</span></label>
 
-  <div className="phone-box">
+  <div className="HRregistration-phone-box">
     <select>
       <option>+91</option>
     </select>
@@ -254,7 +260,7 @@ const handleSubmit = (e) => {
 
       <label>Company Name <span>*</span></label>
 
-      <div className="company-box">
+      <div className="HRregistration-company-box">
    <img src={inputcompany} alt="" />
 
    <input
@@ -278,7 +284,7 @@ const handleSubmit = (e) => {
 
         <label>Password <span>*</span></label>
 
-       <div className="password-box">
+       <div className="HRregistration-password-box">
   <input
     type={showPassword ? "text" : "password"}
     name="password"
@@ -302,7 +308,7 @@ const handleSubmit = (e) => {
 
         <label>Confirm Password <span>*</span></label>
 
-       <div className="password-box">
+       <div className="HRregistration-password-box">
   <input
     type={showConfirmPassword ? "text" : "password"}
     name="confirmPassword"
@@ -348,11 +354,11 @@ const handleSubmit = (e) => {
 
     </div>
 
-    <button type="submit" className="create-account-btn">
+    <button type="submit" className="HRregistration-create-account-btn">
   Create Account
 </button>
 
-    <div className="divider">
+    <div className="HRregistration-divider">
 
       <span></span>
 
@@ -362,9 +368,9 @@ const handleSubmit = (e) => {
 
     </div>
 
-    <p className="signin-text">
+    <p className="HRregistration-signin-text">
       Already have an account?
-      <span onClick={() => navigate("/login")}> Sign in</span>
+      <span onClick={() => navigate("/HrLoginpage")}> Sign in</span>
     </p>
 </form>
   </div>

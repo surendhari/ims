@@ -1,9 +1,3 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-
 .hr-main-container{
     display: flex;
    
@@ -11,12 +5,12 @@
 
 .hr-left-container{
     width: 40%;
- 
     background: linear-gradient(to bottom, #3571CA,#29436B);
     padding:  30px 30px;
     color: white;
 
 }
+
 .hr-left-content{
     margin-top: 80px;
     color: white;
@@ -39,24 +33,24 @@
     width: 380px;
 }
 
-.sts-bar{
+.HRregistration-sts-bar{
     display: flex;
     margin-top: 70px;
     gap: 30px;
 }
 
-.sts-box{
+.HRregistration-sts-box{
     text-align:center;
 }
 
-.sts-box h2{
+.HRregistration-sts-box h2{
     font-size:22px;
     font-weight:500;
     margin-bottom:2px;
     letter-spacing:2px;
 }
 
-.sts-box p{
+.HRregistration-sts-box p{
     font-size:10px;
     font-weight: 200px;
     letter-spacing:0.5px;
@@ -72,14 +66,9 @@
 }
 
 .hr-right-container{
-    margin-top: 30px;
-    margin-bottom: 50px;
     width: 60%;
-    margin-left: 40px;  
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 40px;
+   
 }
 
 
@@ -98,7 +87,7 @@
     margin-bottom: 28px;
 }
 
-.register-label{
+.HRregistration-register-label{
     display: block;
     font-size: 13px;
     color: #4B5563;
@@ -107,14 +96,13 @@
     font-weight: 500;
 }
 
-.register-type{
+.HRregistration-register-type{
     display: flex;
-    margin-left: 40px;
-    gap: 12px;
+    justify-content: space-around;
     margin-bottom: 28px;
 }
 
-.register-box{
+.HRregistration-register-box{
     width: 95px;
     height: 82px;
     border: 1px solid #D8DAE5;
@@ -128,18 +116,17 @@
     background: #fff;
 }
 
-.register-box img{
-    width: 22px;
-    height: 22px;
-    margin-bottom: 10px;
+.HRregistration-register-box img{
+    width:24px;
+    margin-bottom:8px;
 }
 
-.register-box p{
+.HRregistration-register-box p{
     font-size: 14px;
     color: #1F2937;
 }
 
-.register-box.active{
+.HRregistration-register-box.active{
     background: #DCEEFF;
     border-color: #76B7FF;
 }
@@ -178,25 +165,25 @@
     background: white;
 }
 
-.phone-box{
+.HRregistration-phone-box{
     display: flex;
     gap: 8px;
 }
 
-.phone-box select{
+.HRregistration-phone-box select{
     width: 60px;
 }
 
-.phone-box input{
+.HRregistration-phone-box input{
     flex: 1;
 }
 
-.company-box{
+.HRregistration-company-box{
     margin-bottom: 10px;
 }
 
-.company-box,
-.password-box{
+.HRregistration-company-box,
+.HRregistration-password-box{
     width: 100%;
     height: 48px;
     border: 1px solid #D8DAE5;
@@ -206,14 +193,14 @@
     padding: 0 14px;
 }
 
-.company-box img{
+.HRregistration-company-box img{
     width: 18px;
     height: 18px;
     margin-right: 10px;
 }
 
-.company-box input,
-.password-box input{
+.HRregistration-company-box input,
+.HRregistration-password-box input{
     flex: 1;
     border: none;
     outline: none;
@@ -221,7 +208,7 @@
     background: transparent;
 }
 
-.password-box img{
+.HRregistration-password-box img{
     width: 18px;
     height: 18px;
     cursor: pointer;
@@ -249,7 +236,7 @@
     cursor: pointer;
 }
 
-.create-account-btn{
+.HRregistration-create-account-btn{
     width: 100%;
     height: 50px;
     border: none;
@@ -262,31 +249,31 @@
     margin-top: 8px;
 }
 
-.divider{
+.HRregistration-divider{
     display: flex;
     align-items: center;
     gap: 12px;
     margin: 28px 0;
 }
 
-.divider span{
+.HRregistration-divider span{
     flex: 1;
     height: 1px;
     background: #D8DAE5;
 }
 
-.divider p{
+.HRregistration-divider p{
     font-size: 12px;
     color: #6B7280;
 }
 
-.signin-text{
+.HRregistration-signin-text{
     text-align: center;
     font-size: 14px;
     color: #6B7280;
 }
 
-.signin-text span{
+.HRregistration-signin-text span{
     color: #4338CA;
     font-weight: 600;
     cursor: pointer;

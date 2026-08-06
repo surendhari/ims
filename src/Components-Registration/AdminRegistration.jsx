@@ -7,6 +7,10 @@ import "./AdminRegistration.css";
 import admin from "../assets/registration/admin.png";
 import eye from "../assets/registration/eye.png";
 import eyeClose from "../assets/registration/eyeclose.png";
+import hr from "../assets/registration/hr.png"
+import company from "../assets/registration/company.png"
+import intern from "../assets/registration/intern.png"
+import mentor from "../assets/registration/mentor.png"
 
 export  const AdminRegistration=() =>{
   const navigate = useNavigate();
@@ -152,13 +156,46 @@ const handleSubmit = (e) => {
       Fill in the details below to create your account
     </p>
 
-    <label className="register-label">
+    <label className="AdminRegistration-register-label">
       Registering as <span>*</span>
     </label>
 
-    <div className="register-type">
+    <div className="AdminRegistration-register-type">
 
-      <div className="register-box active">
+
+       <div
+              className="AdminRegistration-register-box"
+              onClick={() => navigate("/HRregistration")}
+            >
+              <img src={hr} alt="" />
+              <p>HR</p>
+            </div>
+
+            <div className="AdminRegistration-register-box" onClick={() => navigate("/MentorRegistration")}>
+              
+              <img src={mentor} alt="" />
+              <p>Mentor</p>
+
+            </div>
+
+            <div
+              className="AdminRegistration-register-box"
+              onClick={() => navigate("/InternRegistration")}
+            >
+              <img src={intern} alt="" />
+              <p>Intern</p>
+            </div>
+
+            <div
+              className="AdminRegistration-register-box"
+              onClick={() => navigate("/CompanyRegistration")}
+            >
+              <img src={company} alt="" />
+              <p>Company</p>
+            </div>
+
+
+      <div className="AdminRegistration-register-box active">
         <img src={admin} alt="Admin" />
         <p>Admin</p>
       </div>
@@ -205,7 +242,7 @@ const handleSubmit = (e) => {
 
         <label>Phone Number <span>*</span></label>
 
-        <div className="phone-box">
+        <div className="AdminRegistration-phone-box">
           <select>
             <option>+91</option>
           </select>
@@ -289,7 +326,7 @@ const handleSubmit = (e) => {
 
         <label>Password <span>*</span></label>
 
-       <div className="password-box">
+       <div className="AdminRegistration-password-box">
 
   <input
     type={showPassword ? "text" : "password"}
@@ -301,7 +338,7 @@ const handleSubmit = (e) => {
 
   <img
     src={showPassword ? eyeClose : eye}
-    className="eye-icon"
+    className="AdminRegistration-eye-icon"
     onClick={() => setShowPassword(!showPassword)}
     alt=""
   />
@@ -317,7 +354,7 @@ const handleSubmit = (e) => {
 
         <label>Confirm Password <span>*</span></label>
 
-        <div className="password-box">
+        <div className="AdminRegistration-password-box">
 
   <input
     type={showConfirmPassword ? "text" : "password"}
@@ -329,7 +366,7 @@ const handleSubmit = (e) => {
 
   <img
     src={showConfirmPassword ? eyeClose : eye}
-    className="eye-icon"
+    className="AdminRegistration-eye-icon"
     onClick={() =>
       setShowConfirmPassword(!showConfirmPassword)
     }
@@ -369,20 +406,20 @@ const handleSubmit = (e) => {
     </div>
 <button
   type="submit"
-  className="create-account-btn"
+  className="AdminRegistration-create-account-btn"
 >
   Create Account
 </button>
 
-    <div className="divider">
+    <div className="AdminRegistration-divider">
       <span></span>
       <p>OR</p>
       <span></span>
     </div>
 
-    <p className="signin-text">
+    <p className="AdminRegistration-signin-text">
       Already have an account?
-      <span> Sign In</span>
+      <span onClick={() => navigate("/login")}> Sign in</span>
     </p>
  </form>
   </div> 
@@ -391,7 +428,7 @@ const handleSubmit = (e) => {
   <div className="admin-nav">
     <div> <p>&copy; 2024 InternMS.All rights reserved.</p></div>
    
-    <div className="nav-links">
+    <div className="AdminRegistration-nav-links">
       <a href="">Privacy Policy</a>
       <a href="">Ters of Service</a>
       <a href="">Support</a>

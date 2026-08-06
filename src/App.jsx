@@ -8,11 +8,15 @@ import {ForgotPasswordOtp} from "./Components-Login/FrogotPasswordOtp";
 import {ResetPassword} from "./Components-Login/ResetPassword";
 import {ResetPasswordSuccess} from "./Components-Login/ResetPasswordSuccess";
 import {HRregistration} from "./Components-Registration/HRregistration"
-import { MentorRegistration } from "./Components-Registration/MentorRegistration";
-import { CompanyRegistration } from "./Components-Registration/CompanyRegistration";
-import { InternRegistration } from "./Components-Registration/InternRegistration";
-import { AdminRegistration } from "./Components-Registration/AdminRegistration";
-import { HrDashboard } from "./Components-Hr/HrDashboard";
+import {MentorRegistration } from "./Components-Registration/MentorRegistration";
+import {CompanyRegistration } from "./Components-Registration/CompanyRegistration";
+import {InternRegistration } from "./Components-Registration/InternRegistration";
+import {AdminRegistration } from "./Components-Registration/AdminRegistration";
+import {HrDashboard } from "./Components-Hr/HrDashboard";
+import { InternLoginpage } from "./Components-Login/InternLoginpage";
+import { MentorLoginpage } from "./Components-Login/MentorLoginpage";
+import { CompanyLoginpage } from "./Components-Login/CompanyLoginpage";
+import { HrLoginpage } from "./Components-Login/HrLoginpage";
 
 
 
@@ -74,6 +78,22 @@ const router = createBrowserRouter([
   {
     path:"/HrDashboard",
     element:<HrDashboard/>
+  },
+   {
+    path:"/InternLoginpage",
+    element:<InternLoginpage/>
+  },
+  {
+    path:"/MentorLoginpage",
+    element:<MentorLoginpage/>
+  },
+   {
+    path:"/CompanyLoginpage",
+    element:<CompanyLoginpage/>
+  },
+   {
+    path:"/HrLoginpage",
+    element:<HrLoginpage/>
   },
 ],
  {

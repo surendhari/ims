@@ -1,12 +1,5 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 .login-main{
     width:100%;
-
     display:flex;
 }
 
@@ -187,7 +180,8 @@
 }
 
 .signin-btn img{
-    width:18px;
+    width:14px;
+    align-items: center;
 }
 
 .divider{

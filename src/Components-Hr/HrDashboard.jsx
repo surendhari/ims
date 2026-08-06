@@ -256,7 +256,7 @@ const CustomTooltip = ({ active, payload }) => {
         <img src={menu} alt="Menu" onClick={toggleSidebar}  style={{cursor:"pointer"}}/>
 
         <div>
-          <h3>Dashboard</h3>
+          <h3 style={{color:"#003073"}}>Dashboard</h3>
           <p>welcome back, Admin Here’s an overview of the internship ecosystem.</p>
         </div>
       </div>

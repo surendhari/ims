@@ -186,11 +186,11 @@ export const LoginPage=()=> {
           </div>
 
           <div className="footer-links">
-            <a href="/">Help</a>
+            <a href="">Help</a>
 
-            <a href="/">Privacy</a>
+            <a href="">Privacy</a>
 
-            <a href="/">Terms</a>
+            <a href="">Terms</a>
           </div>
         </form>
       </div>
