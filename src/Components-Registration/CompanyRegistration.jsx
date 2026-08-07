@@ -182,7 +182,7 @@ export const CompanyRegistration = () => {
               Fill in the details to register your organization and start
               hiring.
             </p>
-
+   <label className="companyregistration-register-label"> Registering as <span>*</span></label>
             <div className="CompanyRegistration-register-type">
               <div
                 className="CompanyRegistration-register-box"

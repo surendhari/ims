@@ -141,7 +141,7 @@ const handleSubmit = (e) => {
       Join our ecosystem of professional employers.
     </p>
 
-    <label className="HRregistration-register-label">Registering as</label>
+    <label className="HRregistration-register-label"> Registering as <span>*</span></label>
 
     <div className="HRregistration-register-type">
     
