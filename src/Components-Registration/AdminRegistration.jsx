@@ -47,6 +47,7 @@ const validate = () => {
   let newErrors = {};
 
   if (!form.fullName.trim()) {
+    
     newErrors.fullName = "Full Name is required";
   } else if (!/^[A-Za-z ]+$/.test(form.fullName)) {
     newErrors.fullName = "Only letters are allowed";
@@ -211,7 +212,9 @@ const handleSubmit = (e) => {
   name="fullName"
   value={form.fullName}
   onChange={handleChange}
-  placeholder="Enter your full name"
+  placeholder="Enter your full name" 
+  className={errors.fullName ? "input-error" : ""}
+  
 />
 
 {errors.fullName && (
@@ -227,6 +230,7 @@ const handleSubmit = (e) => {
   value={form.email}
   onChange={handleChange}
   placeholder="Enter your email address"
+  className={errors.email ? "input-error" : ""}
 />
 
 {errors.email && (
@@ -243,7 +247,7 @@ const handleSubmit = (e) => {
         <label>Phone Number <span>*</span></label>
 
         <div className="AdminRegistration-phone-box">
-          <select>
+          <select className={errors.phone ? "input-error" : ""}>
             <option>+91</option>
           </select>
 
@@ -253,8 +257,8 @@ const handleSubmit = (e) => {
   value={form.phone}
   onChange={handleChange}
   placeholder="Enter your number"
+  className={errors.phone ? "input-error" : ""}
 />
-
 
         </div>
         {errors.phone && (
@@ -272,6 +276,7 @@ const handleSubmit = (e) => {
   value={form.organization}
   onChange={handleChange}
   placeholder="Enter organization name"
+  className={errors.organization ? "input-error" : ""}
 />
 
 {errors.organization && (
@@ -292,6 +297,7 @@ const handleSubmit = (e) => {
   value={form.designation}
   onChange={handleChange}
   placeholder="Enter your job title"
+  className={errors.designation ? "input-error" : ""}
 />
 
 {errors.designation && (
@@ -306,6 +312,7 @@ const handleSubmit = (e) => {
   name="country"
   value={form.country}
   onChange={handleChange}
+   className={errors.country ? "input-error" : ""}
 >
   <option value="">Select your country</option>
   <option>India</option>
@@ -326,7 +333,11 @@ const handleSubmit = (e) => {
 
         <label>Password <span>*</span></label>
 
-       <div className="AdminRegistration-password-box">
+      <div
+  className={`AdminRegistration-password-box ${
+    errors.password ? "input-error" : ""
+  }`}
+>
 
   <input
     type={showPassword ? "text" : "password"}
@@ -334,6 +345,7 @@ const handleSubmit = (e) => {
     value={form.password}
     onChange={handleChange}
     placeholder="Create a strong password"
+     
   />
 
   <img
@@ -354,7 +366,11 @@ const handleSubmit = (e) => {
 
         <label>Confirm Password <span>*</span></label>
 
-        <div className="AdminRegistration-password-box">
+        <div
+  className={`AdminRegistration-password-box ${
+    errors.confirmPassword ? "input-error" : ""
+  }`}
+>
 
   <input
     type={showConfirmPassword ? "text" : "password"}
@@ -362,6 +378,7 @@ const handleSubmit = (e) => {
     value={form.confirmPassword}
     onChange={handleChange}
     placeholder="Confirm your password"
+    className={errors.confirmPassword ? "input-error" : ""}
   />
 
   <img

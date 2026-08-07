@@ -286,3 +286,38 @@
   margin-right: 20px;
   color: #464555;
 }
+
+/* Normal Input Error */
+.admin-input-group input.input-error,
+.admin-input-group select.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+.admin-input-group input.input-error:focus,
+.admin-input-group select.input-error:focus {
+  border-color: #ff4d4f !important;
+  box-shadow: 0 0 4px rgba(255, 77, 79, 0.3);
+}
+
+/* Password Box Error */
+.AdminRegistration-password-box.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+.AdminRegistration-password-box.input-error input {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent;
+}
+
+/* Phone Box Error */
+.AdminRegistration-phone-box.input-error {
+  border: 1px solid #ff4d4f !important;
+  border-radius: 8px;
+}
+
+.AdminRegistration-phone-box.input-error input,
+.AdminRegistration-phone-box.input-error select {
+  border: none !important;
+  box-shadow: none !important;
+}

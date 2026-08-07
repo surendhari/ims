@@ -343,3 +343,51 @@
     cursor:pointer;
 }
  
+
+/* Normal Inputs */
+.CompanyRegistration-form-group input.input-error,
+.CompanyRegistration-form-group select.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+/* Country Code */
+.CompanyRegistration-country-code.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+/* Phone Number */
+.CompanyRegistration-phone-input input.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+/* Password Box */
+.CompanyRegistration-password-box.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+.CompanyRegistration-password-box.input-error input {
+  border: none !important;
+  box-shadow: none !important;
+}
+.CompanyRegistration-form-group input.input-error,
+.CompanyRegistration-form-group select.input-error {
+  border: 1px solid #ff4d4f !important;
+}
+
+.CompanyRegistration-country-code {
+  width: 75px;
+  border: 1px solid #D8DAE5;
+  border-radius: 8px;
+}
+
+.CompanyRegistration-phone-input input:last-child {
+  flex: 1;
+  border: 1px solid #D8DAE5;
+  border-radius: 8px;
+}
+
+/* Error */
+.CompanyRegistration-country-code.input-error,
+.CompanyRegistration-phone-input input.input-error {
+  border: 1px solid #ff4d4f !important;
+}

@@ -240,6 +240,7 @@ export const InternRegistration = () => {
                 placeholder="Enter your full name"
                 value={form.fullName}
                 onChange={handleChange}
+                 className={errors.fullName ? "input-error" : ""}
               />
 
               {errors.fullName && <p className="error">{errors.fullName}</p>}
@@ -254,6 +255,7 @@ export const InternRegistration = () => {
                 placeholder="Enter your email address"
                 value={form.email}
                 onChange={handleChange}
+                 className={errors.email ? "input-error" : ""}
               />
               {errors.email && <p className="error">{errors.email}</p>}
             </div>
@@ -271,8 +273,8 @@ export const InternRegistration = () => {
                 Phone Number <span>*</span>
               </label>
 
-               <div className="AdminRegistration-phone-box">
-          <select>
+               <div className="AdminRegistration-phone-box" >
+          <select className={errors.phone ? "input-error" : ""}>
             <option>+91</option>
           </select>
 
@@ -282,6 +284,7 @@ export const InternRegistration = () => {
                   placeholder="Enter your phone number"
                   value={form.phone}
                   onChange={handleChange}
+                  className={errors.phone ? "input-error" : ""}
                 />
               </div>
 
@@ -300,6 +303,7 @@ export const InternRegistration = () => {
                 name="dob"
                 value={form.dob}
                 onChange={handleChange}
+                className={errors.dob ? "input-error" : ""}
               />
 
               {errors.dob && <p className="error">{errors.dob}</p>}
@@ -319,6 +323,7 @@ export const InternRegistration = () => {
                 placeholder="Enter your college name"
                 value={form.college}
                 onChange={handleChange}
+                className={errors.college ? "input-error" : ""}
               />
 
               {errors.college && <p className="error">{errors.college}</p>}
@@ -329,7 +334,7 @@ export const InternRegistration = () => {
                 Field of Study <span>*</span>
               </label>
 
-              <select name="field" value={form.field} onChange={handleChange}>
+              <select name="field" value={form.field} onChange={handleChange}  className={errors.field ? "input-error" : ""}>
                 <option value="">Select your field</option>
                 <option value="Computer Science">Computer Science</option>
                 <option value="Information Technology">
@@ -354,6 +359,7 @@ export const InternRegistration = () => {
                 name="graduationYear"
                 value={form.graduationYear}
                 onChange={handleChange}
+                 className={errors.graduationYear ? "input-error" : ""}
               >
                 <option value="">Select Year</option>
                 <option>2024</option>
@@ -378,6 +384,7 @@ export const InternRegistration = () => {
                 name="resume"
                 accept=".pdf,.doc,.docx"
                 onChange={handleChange}
+                 className={errors.resume ? "input-error" : ""}
               />
 
               {errors.resume && <p className="error">{errors.resume}</p>}
@@ -397,6 +404,7 @@ export const InternRegistration = () => {
                   placeholder="Create a password"
                   value={form.password}
                   onChange={handleChange}
+                    className={errors.password ? "input-error" : ""}
                 />
 
                 <img
@@ -422,6 +430,7 @@ export const InternRegistration = () => {
                   placeholder="Confirm password"
                   value={form.confirmPassword}
                   onChange={handleChange}
+                   className={errors.confirmPassword ? "input-error" : ""}
                 />
 
                 <img

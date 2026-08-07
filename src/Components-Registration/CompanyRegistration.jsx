@@ -236,6 +236,7 @@ export const CompanyRegistration = () => {
                     value={formData.companyName}
                     onChange={handleChange}
                     placeholder="e.g. Acme Corp"
+                    className={errors.companyName ? "input-error" : ""}
                   />
 
                   {errors.companyName && (
@@ -252,6 +253,7 @@ export const CompanyRegistration = () => {
                     value={formData.website}
                     onChange={handleChange}
                     placeholder="https://"
+                     className={errors.website ? "input-error" : ""}
                   />
 
                   {errors.website && (
@@ -270,6 +272,7 @@ export const CompanyRegistration = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="name@company.com"
+                     className={errors.email ? "input-error" : ""}
                   />
 
                   {errors.email && (
@@ -278,13 +281,16 @@ export const CompanyRegistration = () => {
                 </div>
                 <div className="CompanyRegistration-form-group">
                   <label>Phone Number *</label>
-
-                  <div className="CompanyRegistration-phone-input">
+<div className="CompanyRegistration-phone-input">
                     <input
-                      className="CompanyRegistration-country-code"
+                     className={`CompanyRegistration-country-code ${
+      errors.phone ? "input-error" : ""
+    }`}
                       type="text"
                       value="+91"
                       readOnly
+                       
+                     
                     />
 
                     <input
@@ -293,9 +299,9 @@ export const CompanyRegistration = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="Enter your number"
+                       className={errors.phone ? "input-error" : ""}
                     />
-                  </div>
-
+</div>
                   {errors.phone && (
                     <small className="error">{errors.phone}</small>
                   )}
@@ -310,6 +316,7 @@ export const CompanyRegistration = () => {
                     name="industry"
                     value={formData.industry}
                     onChange={handleChange}
+                    className={errors.industry ? "input-error" : ""}
                   >
                     <option value="">Select Industry</option>
                     <option>IT</option>
@@ -330,6 +337,7 @@ export const CompanyRegistration = () => {
                     name="companySize"
                     value={formData.companySize}
                     onChange={handleChange}
+                     className={errors.companySize ? "input-error" : ""}
                   >
                     <option value="">Select Size</option>
                     <option>1 - 10</option>
@@ -353,6 +361,7 @@ export const CompanyRegistration = () => {
                   value={formData.registrationNumber}
                   onChange={handleChange}
                   placeholder="Business ID or Tax ID"
+                  className={errors.registrationNumber ? "input-error" : ""}
                 />
 
                 {errors.registrationNumber && (
@@ -364,7 +373,12 @@ export const CompanyRegistration = () => {
                 <div className="CompanyRegistration-form-group">
                   <label>Password *</label>
 
-                  <div className="CompanyRegistration-password-box">
+                  <div
+  className={`CompanyRegistration-password-box ${
+    errors.password ? "input-error" : ""
+  }`}
+>
+
                     <input
                       type={showPassword ? "text" : "password"}
                       name="password"
@@ -388,7 +402,11 @@ export const CompanyRegistration = () => {
                 <div className="CompanyRegistration-form-group">
                   <label>Confirm Password *</label>
 
-                  <div className="CompanyRegistration-password-box">
+                 <div
+  className={`CompanyRegistration-password-box ${
+    errors.confirmPassword ? "input-error" : ""
+  }`}
+>
                     <input
                       type={showConfirmPassword ? "text" : "password"}
                       name="confirmPassword"

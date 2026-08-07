@@ -186,6 +186,7 @@ const handleSubmit = (e) => {
   value={form.fullName}
   onChange={handleChange}
   placeholder="John Doe"
+  className={errors.fullName ? "input-error" : ""}
 />
 
 {errors.fullName && <p className="error">{errors.fullName}</p>}
@@ -200,6 +201,7 @@ const handleSubmit = (e) => {
   value={form.email}
   onChange={handleChange}
   placeholder="john.doe@company.com"
+  className={errors.email ? "input-error" : ""}
 />
 
 {errors.email && <p className="error">{errors.email}</p>}
@@ -216,7 +218,7 @@ const handleSubmit = (e) => {
   <label>Phone Number <span>*</span></label>
 
   <div className="HRregistration-phone-box">
-    <select>
+    <select  className={errors.phone ? "input-error" : ""}>
       <option>+91</option>
     </select>
 
@@ -226,6 +228,7 @@ const handleSubmit = (e) => {
       value={form.phone}
       onChange={handleChange}
       placeholder="Enter your number"
+      className={errors.phone ? "input-error" : ""}
     />
   </div>
 
@@ -242,6 +245,7 @@ const handleSubmit = (e) => {
   name="department"
   value={form.department}
   onChange={handleChange}
+   className={errors.department ? "input-error" : ""}
 >
   <option value="">Select department</option>
   <option>HR</option>
@@ -260,7 +264,11 @@ const handleSubmit = (e) => {
 
       <label>Company Name <span>*</span></label>
 
-      <div className="HRregistration-company-box">
+     <div
+  className={`HRregistration-company-box ${
+    errors.companyName ? "input-error" : ""
+  }`}
+>
    <img src={inputcompany} alt="" />
 
    <input
@@ -284,7 +292,11 @@ const handleSubmit = (e) => {
 
         <label>Password <span>*</span></label>
 
-       <div className="HRregistration-password-box">
+       <div
+  className={`HRregistration-password-box ${
+    errors.password ? "input-error" : ""
+  }`}
+>
   <input
     type={showPassword ? "text" : "password"}
     name="password"
@@ -308,7 +320,11 @@ const handleSubmit = (e) => {
 
         <label>Confirm Password <span>*</span></label>
 
-       <div className="HRregistration-password-box">
+      <div
+  className={`HRregistration-password-box ${
+    errors.confirmPassword ? "input-error" : ""
+  }`}
+>
   <input
     type={showConfirmPassword ? "text" : "password"}
     name="confirmPassword"

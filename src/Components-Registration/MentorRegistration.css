@@ -297,3 +297,12 @@ small{
     color: #464555;
 }
 
+.input-error{
+    border: 1px solid #E53935 !important;
+}
+
+.input-error:focus{
+    border-color: #E53935 !important;
+    box-shadow: 0 0 0 2px rgba(229,57,53,0.15);
+}
+

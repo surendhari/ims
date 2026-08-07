@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import "./HrDashboard.css"
+import { useNavigate } from "react-router-dom";
 import activeinternships from "../assets/hr-modules/activeinternships.png";
 import totalinterns from "../assets/hr-modules/totalinterns.png";
 import newapplications from "../assets/hr-modules/newapplication.png";
@@ -41,6 +42,7 @@ import review from "../assets/hr-modules/review.png";
 import shortlisted from "../assets/hr-modules/shortlisted.png";
 import selected from "../assets/hr-modules/selected.png";
 import rejected from "../assets/hr-modules/rejected.png";
+import logout from "../assets/hr-modules/logout.png"
 
 
 import {
@@ -58,6 +60,17 @@ import {
 
 
 export const HrDashboard = () => {
+  const navigate = useNavigate(); 
+
+  const handleLogout = () => {
+  const confirmLogout = window.confirm("Are you sure you want to logout?");
+
+  if (confirmLogout) {
+    localStorage.removeItem("isLoggedIn");
+    sessionStorage.clear();
+    navigate("/HrLoginpage");
+  }
+};
   
   
   const toggleSidebar = () => {setIsOpen(!isOpen);};
@@ -121,6 +134,7 @@ const menuItems = [
   { icon: reports, text: "Reports" },
   { icon: notifications, text: "Notifications" },
   { icon: settings, text: "Settings" },
+  {icon:logout , text: "Logout"}
 ];
 
 
@@ -217,9 +231,15 @@ const CustomTooltip = ({ active, payload }) => {
       <div className="hr-dashboard-menu-list">
 
         {menuItems.map((item, index) => (
-         <div
+        <div
   key={index}
   className={`hr-dashboard-menu-item ${index === 0 ? "active" : ""}`}
+  onClick={() => {
+    if (item.text === "Logout") {
+      handleLogout();
+    }
+  }}
+  style={{ cursor: "pointer" }}
 >
   <img src={item.icon} alt={item.text} />
 

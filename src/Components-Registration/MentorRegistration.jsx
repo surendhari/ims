@@ -220,6 +220,7 @@ export const MentorRegistration = () => {
                 placeholder="Enter your full name"
                 value={form.fullName}
                 onChange={handleChange}
+                className={errors.fullName ? "input-error" : ""}
               />
 
               {errors.fullName && <small>{errors.fullName}</small>}
@@ -236,6 +237,7 @@ export const MentorRegistration = () => {
                 placeholder="Enter your email address"
                 value={form.email}
                 onChange={handleChange}
+                className={errors.email ? "input-error" : ""}
               />
 
               {errors.email && <small>{errors.email}</small>}
@@ -253,6 +255,7 @@ export const MentorRegistration = () => {
                 name="phone"
                 placeholder="+91 Enter your number"
                 maxLength={10}
+                className={errors.phone ? "input-error" : ""}
                 value={form.phone}
                 onChange={(e) => {
                   const value = e.target.value.replace(/\D/g, "");
@@ -274,6 +277,7 @@ export const MentorRegistration = () => {
                 placeholder="e.g. Senior Software Engineer"
                 value={form.title}
                 onChange={handleChange}
+                className={errors.title ? "input-error" : ""}
               />
 
               {errors.title && <small>{errors.title}</small>}
@@ -292,6 +296,7 @@ export const MentorRegistration = () => {
                 placeholder="UI/UX, React, Java..."
                 value={form.skills}
                 onChange={handleChange}
+                className={errors.skills ? "input-error" : ""}
               />
 
               <p className="MentorRegistration-input-note">Separate multiple skills with commas</p>
@@ -308,6 +313,8 @@ export const MentorRegistration = () => {
                 name="experience"
                 value={form.experience}
                 onChange={handleChange}
+                className={errors.experience ? "input-error" : ""}
+
               >
                 <option value="">Select experience level</option>
                 <option>0-1 Years</option>
@@ -331,6 +338,7 @@ export const MentorRegistration = () => {
               name="bio"
               placeholder="Tell us about yourself, your background and why you're passionate about mentoring..."
               value={form.bio}
+              className={errors.bio ? "input-error" : ""}
               onChange={handleChange}
             ></textarea>
 
@@ -352,6 +360,7 @@ export const MentorRegistration = () => {
                   placeholder="Create a strong password"
                   value={form.password}
                   onChange={handleChange}
+                  className={errors.password ? "input-error" : ""}
                 />
 
                 <img
@@ -377,6 +386,7 @@ export const MentorRegistration = () => {
                   placeholder="Confirm your password"
                   value={form.confirmPassword}
                   onChange={handleChange}
+                  className={errors.confirmPassword ? "input-error" : ""}
                 />
 
                 <img
