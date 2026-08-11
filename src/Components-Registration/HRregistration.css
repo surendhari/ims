@@ -1,6 +1,5 @@
 .hr-main-container{
-    display: flex;
-   
+    display: flex; 
 }
 
 .hr-left-container{
@@ -8,7 +7,6 @@
     background: linear-gradient(to bottom, #3571CA,#29436B);
     padding:  30px 30px;
     color: white;
-
 }
 
 .hr-left-content{
@@ -21,6 +19,7 @@
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 .hr-left-content p{
     font-size: 14px;
     color: #DAD7FF;
@@ -71,10 +70,7 @@
    
 }
 
-
-
 .hr-register-card h1{
-
     font-size: 40px;
     font-weight: 600;
     color: #1F2937;
@@ -93,6 +89,7 @@
     margin-bottom:10px;
     font-weight:600;
 }
+
 .HRregistration-register-label span{
     color:red;
 }
@@ -173,7 +170,7 @@
 }
 
 .HRregistration-phone-box select{
-    width: 60px;
+    width: 75px;
 }
 
 .HRregistration-phone-box input{

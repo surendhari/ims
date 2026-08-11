@@ -6,6 +6,10 @@ import totalinterns from "../assets/hr-modules/totalinterns.png";
 import newapplications from "../assets/hr-modules/newapplication.png";
 import ongoingproject from "../assets/hr-modules/ongoingproject.png";
 import calendar from "../assets/hr-modules/calendar.png";
+import myprofile from "../assets/hr-modules/myprofile.png";
+import organization from "../assets/hr-modules/organization.png";
+import task from "../assets/hr-modules/task.png";
+import onboarding from "../assets/hr-modules/onboarding.png";
 import folder from "../assets/hr-modules/folder.png";
 import monitor from "../assets/hr-modules/monitor.png";
 import feedback from "../assets/hr-modules/feedback.png";
@@ -17,16 +21,10 @@ import downarrow from "../assets/hr-modules/downarrow.png";
 import dashboard from "../assets/hr-modules/dashboard.png";
 import intern from "../assets/hr-modules/intern.png";
 import applications from "../assets/hr-modules/applications.png";
-import departments from "../assets/hr-modules/departments.png";
-import project from "../assets/hr-modules/project.png";
 import mentors from "../assets/hr-modules/mentors.png";
-import evaluations from "../assets/hr-modules/evaluations.png";
 import attendance from "../assets/hr-modules/attendance.png";
-import reports from "../assets/hr-modules/reports.png";
-import notifications from "../assets/hr-modules/notifications.png";
+import report from "../assets/hr-modules/report.png";
 import settings from "../assets/hr-modules/settings.png";
-import sidebarprofile from "../assets/hr-modules/sidebarprofile.png";
-import whitearrow from "../assets/hr-modules/whitearrow.png";
 import harsha from "../assets/hr-modules/harsha.png";
 import sukumar from "../assets/hr-modules/sukumar.png";
 import sai from "../assets/hr-modules/sai.png";
@@ -42,7 +40,8 @@ import review from "../assets/hr-modules/review.png";
 import shortlisted from "../assets/hr-modules/shortlisted.png";
 import selected from "../assets/hr-modules/selected.png";
 import rejected from "../assets/hr-modules/rejected.png";
-import logout from "../assets/hr-modules/logout.png"
+import logout from "../assets/hr-modules/logout.png";
+import communication from "../assets/hr-modules/communication.png"
 
 
 import {
@@ -124,15 +123,16 @@ export const HrDashboard = () => {
   const [isOpen, setIsOpen] = useState(true);
 const menuItems = [
   { icon: dashboard, text: "Dashboard" },
+  { icon :myprofile, text:"My Profile"},
   { icon: intern, text: "Interns" },
   { icon: applications, text: "Applications" },
-  { icon: departments, text: "Departments" },
-  { icon: project, text: "Projects" },
+  { icon: organization, text: "Organization" },
   { icon: mentors, text: "Mentors" },
-  { icon: evaluations, text: "Evaluations" },
+  { icon: task, text: "Task & Approvals" },
   { icon: attendance, text: "Attendance" },
-  { icon: reports, text: "Reports" },
-  { icon: notifications, text: "Notifications" },
+  { icon: onboarding, text: "Onboarding" },
+  { icon: report, text: "Reports & Analytics" },
+  { icon: communication, text: "Communication" },
   { icon: settings, text: "Settings" },
   {icon:logout , text: "Logout"}
 ];
@@ -223,11 +223,6 @@ const CustomTooltip = ({ active, payload }) => {
 
 <div className={isOpen ? "hr-dashboard-sidebar" : "hr-dashboard-sidebar-mini"}>
 
-      <div className="hr-dashboard-logo-section">
-        <h2>Intern MS</h2>
-        <p>HR Dashboard</p>
-      </div>
-
       <div className="hr-dashboard-menu-list">
 
         {menuItems.map((item, index) => (
@@ -248,25 +243,6 @@ const CustomTooltip = ({ active, payload }) => {
         ))}
 
       </div>
-
-<div className="hr-dashboard-sidebar-profile">
-
-    <img src={sidebarprofile} alt="Sidebar Profile" />
-
-    {isOpen && (
-      <>
-        <div>
-          <h3>Sudhakar HR</h3>
-          <p>HR Manager</p>
-        </div>
-
-        <div className="hr-dashboard-sidebararrow">
-          <img src={whitearrow} alt="White Arrow" />
-        </div>
-      </>
-    )}
-
-</div>
     </div>
 
     <div className={isOpen ? "hr-dashboard-right" : "hr-dashboard-right mini"}>
