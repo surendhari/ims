@@ -1,0 +1,165 @@
+.hr-dashboard-sidebar{
+    width: 250px;
+    height:100vh;
+    background: #00328D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.hr-dashboard-menu-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0px 10px;
+    gap: 3px;
+}
+
+.hr-dashboard-menu-item{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hr-dashboard-menu-item img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.hr-dashboard-menu-item span{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.hr-dashboard-menu-item:hover{
+    background: rgba(255,255,255,.15);
+}
+
+.hr-dashboard-menu-item.active{
+    background: rgba(255,255,255,.18);
+  
+}
+
+.hr-dashboard-sidebar-footer{
+    padding: 15px;
+}
+
+.hr-dashboard-sidebar::-webkit-scrollbar{
+    width: 5px;
+}
+
+.hr-dashboard-sidebar::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255,.25);
+    border-radius: 10px;
+}
+
+.hr-dashboard-sidebar::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.hr-dashboard-sidebar-profile{
+    display: flex;
+   margin:  10px 10px;
+   background: #00000040;   
+}
+
+
+.hr-dashboard-sidebar.show{
+    transform:translateX(0);
+}
+ 
+.hr-dashboard-sidebar.hide{
+    transform:translateX(-100%);
+}
+
+.hr-dashboard-sidebar-profile h3{
+    font-size:18px;
+}
+
+.hr-dashboard-sidebar-profile img{
+    height: 30px;
+    width: 30px;
+}
+.hr-dashboard-sidebararrow img{
+    height:15px;
+    width: 20px;
+}
+.hr-dashboard-sidebar{
+    width:260px;
+    transition:0.3s ease;
+}
+
+
+.hr-dashboard-menu-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+  
+}
+
+.hr-dashboard-sidebar-mini .hr-dashboard-menu-item{
+    justify-content:center;
+}
+
+.hr-dashboard-sidebar-mini .hr-dashboard-menu-item span{
+    display:none;
+}
+.hr-dashboard-sidebar-profile{
+    display:flex;
+    align-items:center;
+   
+}
+
+.hr-dashboard-sidebar-mini .hr-dashboard-sidebar-profile{
+    justify-content:center;
+}
+
+.hr-dashboard-sidebar-mini .hr-dashboard-sidebararrow{
+    display:none;
+}
+.hr-dashboard-sidebar-mini .hr-dashboard-logo-section h2,
+.hr-dashboard-sidebar-mini .hr-dashboard-logo-section p{
+    display:none;
+}
+.hr-dashboard-right.mini{
+    margin-left:85px;
+    width:calc(100% - 85px);
+}
+
+
+.hr-dashboard-sidebar-mini{
+    width:85px;
+    height:100vh;
+    background:#00328D;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    overflow-y:auto;
+    overflow-x:hidden;
+    transition:0.3s ease;
+}
+.hr-dashboard-sidebar-mini::-webkit-scrollbar{
+    width:4px;
+}
+
+.hr-dashboard-sidebar-mini::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,0.3);
+    border-radius:10px;
+}
+
+.hr-dashboard-sidebar-mini::-webkit-scrollbar-track{
+    background:transparent;
+}

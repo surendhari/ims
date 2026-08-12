@@ -50,7 +50,7 @@ export const HrLoginpage=()=> {
         email,
         password,
       });
-      navigate("/HRdashboard");
+      navigate("/HRdashboardMain");
     }
   };
 

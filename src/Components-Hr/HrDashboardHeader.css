@@ -1,0 +1,264 @@
+.hr-dashboard-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.hr-dashboard-right{
+    display: flex;
+    flex-direction: column;
+    margin-left:260px;
+    width:calc(100% - 260px);
+    transition:all .3s ease;
+}
+
+
+.hr-dashboard-main{
+    display: flex;
+    width: 100%;  
+}
+
+
+.hr-dashboard-topbar{
+    width: 100%;
+    height: 80px;
+    background: #C5DFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6eaf2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hr-dashboard-topbar .hr-dashboard-top-left{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hr-dashboard-topbar .hr-dashboard-top-left img{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hr-dashboard-top-left h3{
+    font-size: 14px;
+    font-weight:600;
+    color: #1b1b1b;
+    font-weight: 700;
+}
+
+.hr-dashboard-top-left p{
+    font-size: 10px;
+    font-weight: 400;
+    color:  #003073;
+    margin-top: 2px;
+    
+}
+
+.hr-dashboard-top-search{
+    width: 420px;
+    height: 46px;
+    background: #f5f7fb;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.hr-dashboard-top-search img{
+    width: 18px;
+    height: 18px;
+}
+
+.hr-dashboard-top-search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #444;
+}
+
+.hr-dashboard-top-search input::placeholder{
+    color: #9ca3af;
+}
+
+
+
+.hr-dashboard-top-right{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.hr-dashboard-icon{
+
+margin-top:7px; 
+   width: 35px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.hr-dashboard-profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.hr-dashboard-profile img:first-child{
+    width: 32px;
+    height: 32px;
+    margin-bottom:7px ;
+    border-radius: 50%;
+}
+
+.hr-dashboard-profile h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #002968;
+}
+
+.hr-dashboard-profile p{
+    font-size: 12px;
+    color: #002968;
+}
+
+.hr-dashboard-down{
+    width: 15px;
+    height: 10px;
+}
+
+
+.hr-dashboard-profile:hover{
+    opacity: .85;
+}
+
+.hr-dashboard-icon:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.hr-dashboard-topbar{
+    width: 100%;
+    height: 80px;
+    background: #C5DFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6eaf2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hr-dashboard-top-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hr-dashboard-top-left img{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hr-dashboard-top-left h3{
+    font-size: 14px;
+    font-weight:600;
+    color: #1b1b1b;
+    font-weight: 700;
+}
+
+.hr-dashboard-top-left p{
+    font-size: 10px;
+    font-weight: 400;
+    color:  #003073;
+    margin-top: 2px;
+    
+}
+
+.hr-dashboard-top-search{
+    width: 320px;
+    height: 43px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.hr-dashboard-top-search img{
+    width: 18px;
+    height: 18px;
+}
+
+.hr-dashboard-top-search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #444;
+}
+
+.hr-dashboard-top-search input::placeholder{
+    color: #9ca3af;
+}
+
+
+
+.hr-dashboard-top-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.hr-dashboard-nav-icon{
+    margin-top: 10px;
+    width: 35px;
+    height: 42px;
+    
+}
+
+.hr-dashboard-nav-profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap:20px;
+}
+
+.hr-dashboard-nav-profile img:first-child{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+.hr-dashboard-down{
+    width: 15px;
+    height: 10px;
+}
+
+
+.hr-dashboard-nav-profile:hover{
+    opacity: .85;
+}
+
+.hr-dashboard-icon:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.hr-dashboard-nav-profile-info h4{
+    font-size: 14px;
+    font-weight: 600;
+    color:#002968;
+}
+.hr-dashboard-nav-profile-info p{
+    font-size: 12px;
+    font-weight: 400;
+    color:#002968;
+}

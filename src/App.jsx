@@ -12,7 +12,7 @@ import {MentorRegistration } from "./Components-Registration/MentorRegistration"
 import {CompanyRegistration } from "./Components-Registration/CompanyRegistration";
 import {InternRegistration } from "./Components-Registration/InternRegistration";
 import {AdminRegistration } from "./Components-Registration/AdminRegistration";
-import {HrDashboard } from "./Components-Hr/HrDashboard";
+import {HrDashboardMain } from "./Components-Hr/HrDashboardMain";
 import { InternLoginpage } from "./Components-Login/InternLoginpage";
 import { MentorLoginpage } from "./Components-Login/MentorLoginpage";
 import { CompanyLoginpage } from "./Components-Login/CompanyLoginpage";
@@ -76,8 +76,8 @@ const router = createBrowserRouter([
     element:<AdminRegistration/>
   },
   {
-    path:"/HrDashboard",
-    element:<HrDashboard/>
+    path:"/HrDashboardMain",
+    element:<HrDashboardMain/>
   },
    {
     path:"/InternLoginpage",

@@ -1,0 +1,48 @@
+.hr-dashboard-main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+    overflow: hidden;
+}
+
+.hr-dashboard-right {
+    flex: 1;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.hr-dashboard-right.mini {
+    flex: 1;
+    width: auto;
+}
+
+.hr-dashboard-content-main {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.hr-dashboard-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.hr-dashboard-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.hr-dashboard-content::-webkit-scrollbar-thumb {
+    background: #c8ced8;
+    border-radius: 10px;
+}
+
+.hr-dashboard-content::-webkit-scrollbar-thumb:hover {
+    background: #aeb5c0;
+}
+
