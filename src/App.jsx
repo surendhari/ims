@@ -17,6 +17,7 @@ import { InternLoginpage } from "./Components-Login/InternLoginpage";
 import { MentorLoginpage } from "./Components-Login/MentorLoginpage";
 import { CompanyLoginpage } from "./Components-Login/CompanyLoginpage";
 import { HrLoginpage } from "./Components-Login/HrLoginpage";
+import { AdminDashboardMain } from "./Components-Admin/AdminDashboardMain";
 
 
 
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
    {
     path:"/HrLoginpage",
     element:<HrLoginpage/>
+  },
+  {
+    path:"/AdminDashboardMain",
+    element:<AdminDashboardMain/>
   },
 ],
  {

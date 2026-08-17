@@ -1,0 +1,48 @@
+.admin-dashboard-main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+    overflow: hidden;
+}
+
+.admin-dashboard-right {
+    flex: 1;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.admin-dashboard-right.mini {
+    flex: 1;
+    width: auto;
+}
+
+.admin-dashboard-content-main {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.admin-dashboard-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.admin-dashboard-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.admin-dashboard-content::-webkit-scrollbar-thumb {
+    background: #c8ced8;
+    border-radius: 10px;
+}
+
+.admin-dashboard-content::-webkit-scrollbar-thumb:hover {
+    background: #aeb5c0;
+}
+
