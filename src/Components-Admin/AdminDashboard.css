@@ -1,0 +1,480 @@
+
+.admin-dashboard-cards{
+    display: flex;
+    gap:20px ;
+    justify-content: space-evenly;
+    padding:20px; 
+}
+
+.admin-dashboard-card-box{
+    display: flex;
+    min-width: 260px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background: rgba(245, 245, 245, 0.521);
+    border: 2px solid rgba(128, 128, 128, 0.427);
+    border-radius: 8px;
+    padding: 20px 20px;
+    box-shadow: 4px 4px 12px rgba(69, 65, 65, 0.12);
+}
+
+.footer-right-arrow{
+    width: 15px;
+    height: auto;
+}
+
+.admin-dashboard-card-box img{
+          height:auto;
+          width:50px;
+        
+}
+
+.admin-dashboard-card-box h6{
+    color:#000000;
+    font-size: 14px;
+    
+}
+.admin-dashboard-card-box h5{
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.admin-dashboard-card-box p{
+        font-size: 12px;
+}
+
+.admin-dashboard-card-box span{
+        color:#005BFF;
+        
+}
+.admin-dashboard-card-box span img{
+    width: 10px;
+    height: auto;
+    margin-right: 2px;
+}
+
+
+.admin-dashboard-status-card{
+    flex: 0 0 450px;
+    width: 450px;
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #d9dee7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.admin-dashboard-status-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+}
+
+.admin-dashboard-status-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.admin-dashboard-status-header select {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #f8fafc;
+    padding: 6px 8px;
+    font-size: 9px;
+    color: #64748b;
+    outline: none;
+    cursor: pointer;
+}
+
+.admin-dashboard-status-body {
+    display: flex;
+    align-items: center;
+    padding: 5px 18px 15px;
+    gap: 15px;
+}
+
+.admin-dashboard-status-chart {
+    width: 240px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.admin-dashboard-status-legend {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-dashboard-status-legend-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-dashboard-status-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #374151;
+}
+
+.admin-dashboard-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.admin-dashboard-status-value {
+    color: #374151;
+    white-space: nowrap;
+}
+
+.admin-dashboard-status-footer {
+    border-top: 1px solid #edf0f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 8px;
+    color: #2673F4;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.admin-dashboard-status-arrow {
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.admin-piechart-main-container{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.admin-dashboard-recent-application{
+    flex: 1;
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #d9dee7;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-dashboard-recent-application h3 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.admin-dashboard-application-header,
+.admin-dashboard-application-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.3fr 1fr 0.9fr;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.admin-dashboard-application-header {
+    margin-bottom: 10px;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 500;
+    color: #374151;
+}
+
+.admin-dashboard-application-row {
+    min-height: 35px;
+    align-items: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+.admin-dashboard-application-status {
+    width: 125px;
+    padding: 7px 10px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+.admin-dashboard-application-status.pending {
+    background:#FFF3DB;
+    color: #FD940B;
+}
+
+.admin-dashboard-application-status.review {
+    background: #E3EFFD;
+    color: #226BF1;
+}
+
+.admin-dashboard-application-status.shortlisted {
+    background: #E6F8F0;
+    color: #37A56D;
+}
+
+.admin-dashboard-application-status.rejected {
+    background: #FDEBED;
+    color: #F2383E;
+}
+
+
+.admin-dashboard-bottom-cards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.admin-internship-progress-card,
+.admin-mentor-card,
+.admin-quick-action-card {
+    background: #ffffff;
+    border: 1px solid #d9dde3;
+    border-radius: 10px;
+    min-height: 250px;
+    padding: 14px 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+.admin-internship-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-internship-progress-header h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #262626;
+}
+
+.admin-internship-progress-header select {
+    border: none;
+    outline: none;
+    background: #f5f6f8;
+    color: #687386;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.admin-progress-gauge {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+.admin-progress-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.admin-progress-item {
+    text-align: center;
+    font-size: 14px;
+    color: #343434;
+}
+
+.admin-progress-item > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.admin-progress-item strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.admin-progress-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.admin-progress-dot.completed {
+    background: #43ae87;
+}
+
+.admin-progress-dot.active {
+    background: #2f6fd0;
+}
+
+.admin-progress-dot.risk {
+    background: #e01818;
+}
+
+
+.admin-progress-footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color:#2673F4;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.admin-mentor-card h3 {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.admin-mentor-details {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.admin-mentor-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-mentor-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-mentor-avatar {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-rk {
+    background: #e3e9f2;
+    color: #416fa8;
+}
+
+.admin-ps {
+    background: #e1f0ea;
+    color: #4e9a7e;
+}
+
+.admin-as {
+    background: #e9e6f4;
+    color: #7160af;
+}
+
+.admin-mentor-info h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-mentor-info p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.admin-mentor-mentored {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-mentor-mentored strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-mentor-mentored span {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #555;
+}
+
+.admin-mentor-footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 12px;
+    padding-top: 8px;
+    text-align: center;
+    color: #2673F4;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.admin-quick-action-card h3 {
+    margin: 0 0 17px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.admin-quick-action-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-quick-action-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-action-img img{
+    width: 30px;
+    margin: 0px 10px;
+    height: auto;
+}
+
+.admin-quick-action-row h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.admin-quick-action-row p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #777;
+}
+

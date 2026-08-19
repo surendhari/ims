@@ -44,7 +44,7 @@
 }
 
 .hr-myprofileimage img{
-    width: 200px;
+    width: 240px;
     padding: 0%;
 }
 
@@ -70,6 +70,12 @@
 .hr-myprofile-details p{
     color:#5e5d5d;
     font-size: 14px;
+}
+
+.hr-myprofile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hr-myprofile-bio-card{
@@ -103,7 +109,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    margin-top: 12px;
+    margin-top: 40px;
     width: 100%;
 }
 
